@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:jellyfood/account.dart';
 import 'package:jellyfood/account/paymentdialog.dart';
 
 import 'amazonpaydialog.dart';
@@ -7,7 +6,7 @@ import 'mobikwikdialog.dart';
 import 'paytmdialog.dart';
 import 'phoepaydialog.dart';
 
-class Payment extends StatelessWidget {
+class PaymoneyMobikwik extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,11 +22,9 @@ class Payment extends StatelessWidget {
                   color: Colors.black,
                   size: 24,
                 ),
-                 onTap: () {
-                Navigator.of(context).push(new MaterialPageRoute(
-                  builder: (BuildContext context) => new ProfilePage(),
-                ));
-              },
+                onTap: () {
+                  Navigator.pop(context);
+                },
               ),
               SizedBox(width: 10.0),
               Text(
@@ -133,13 +130,22 @@ class _SavedState extends State<Saved> {
                   'Mobikwik',
                   style: TextStyle(fontSize: 18.0, color: Colors.black87),
                 ),
-                SizedBox(width: 84),
-                Text(
-                  'LINK ACCOUNT',
-                  style: TextStyle(
-                      fontSize: 16.0,
-                      color: Colors.green[900],
-                      fontWeight: FontWeight.w700),
+                SizedBox(width: 154),
+                Row(
+                  children: <Widget>[
+                    Icon(
+                  Icons.attach_money,
+                  color: Colors.black,
+                  size: 20,
+                ),
+                    Text(
+                      '0',
+                      style: TextStyle(
+                          fontSize: 16.0,
+                          color: Colors.grey,
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),

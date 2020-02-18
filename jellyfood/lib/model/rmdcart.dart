@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:jellyfood/model/rmdcart.dart';
-class Recommended extends StatefulWidget {
+
+import 'mycart.dart';
+class Recommendedcart extends StatefulWidget {
   @override
-  _RecommendedState createState() => _RecommendedState();
+  _RecommendedcartState createState() => _RecommendedcartState();
 }
 
-class _RecommendedState extends State<Recommended> {
+class _RecommendedcartState extends State<Recommendedcart> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -123,7 +124,7 @@ class _RecommendedState extends State<Recommended> {
                                 ),
                                 child: InkWell(
                                   child: Text(
-                                    "ADD",
+                                    "- + 1",
                                     style: TextStyle(
                                       fontSize: 15.0,
                                       color: Colors.yellow,
@@ -241,7 +242,7 @@ class _RecommendedState extends State<Recommended> {
                                 ),
                                 child: InkWell(
                                   child: Text(
-                                    "ADD",
+                                    "- + 1",
                                     style: TextStyle(
                                       fontSize: 15.0,
                                       color: Colors.yellow,
@@ -359,7 +360,7 @@ class _RecommendedState extends State<Recommended> {
                                 ),
                                 child: InkWell(
                                   child: Text(
-                                    "ADD",
+                                    "- + 1",
                                     style: TextStyle(
                                       fontSize: 15.0,
                                       color: Colors.yellow,
@@ -477,7 +478,7 @@ class _RecommendedState extends State<Recommended> {
                                 ),
                                 child: InkWell(
                                   child: Text(
-                                    "ADD",
+                                    "- + 1",
                                     style: TextStyle(
                                       fontSize: 15.0,
                                       color: Colors.yellow,
@@ -595,7 +596,7 @@ class _RecommendedState extends State<Recommended> {
                                 ),
                                 child: InkWell(
                                   child: Text(
-                                    "ADD",
+                                    "- + 1",
                                     style: TextStyle(
                                       fontSize: 15.0,
                                       color: Colors.yellow,
@@ -713,7 +714,7 @@ class _RecommendedState extends State<Recommended> {
                                 ),
                                 child: InkWell(
                                   child: Text(
-                                    "ADD",
+                                    "- + 1",
                                     style: TextStyle(
                                       fontSize: 15.0,
                                       color: Colors.yellow,
@@ -831,7 +832,7 @@ class _RecommendedState extends State<Recommended> {
                                 ),
                                 child: InkWell(
                                   child: Text(
-                                    "ADD",
+                                    "- + 1",
                                     style: TextStyle(
                                       fontSize: 15.0,
                                       color: Colors.yellow,
@@ -949,7 +950,7 @@ class _RecommendedState extends State<Recommended> {
                                 ),
                                 child: InkWell(
                                   child: Text(
-                                    "ADD",
+                                    "- + 1",
                                     style: TextStyle(
                                       fontSize: 15.0,
                                       color: Colors.yellow,
@@ -1067,7 +1068,7 @@ class _RecommendedState extends State<Recommended> {
                                 ),
                                 child: InkWell(
                                   child: Text(
-                                    "ADD",
+                                    "- + 1",
                                     style: TextStyle(
                                       fontSize: 15.0,
                                       color: Colors.yellow,
@@ -1185,7 +1186,7 @@ class _RecommendedState extends State<Recommended> {
                                 ),
                                 child: InkWell(
                                   child: Text(
-                                    "ADD",
+                                    "- + 1",
                                     style: TextStyle(
                                       fontSize: 15.0,
                                       color: Colors.yellow,
@@ -1303,7 +1304,7 @@ class _RecommendedState extends State<Recommended> {
                                 ),
                                 child: InkWell(
                                   child: Text(
-                                    "ADD",
+                                    "- + 1",
                                     style: TextStyle(
                                       fontSize: 15.0,
                                       color: Colors.yellow,
@@ -1421,7 +1422,7 @@ class _RecommendedState extends State<Recommended> {
                                 ),
                                 child: InkWell(
                                   child: Text(
-                                    "ADD",
+                                    "- + 1",
                                     style: TextStyle(
                                       fontSize: 15.0,
                                       color: Colors.yellow,
@@ -1539,7 +1540,7 @@ class _RecommendedState extends State<Recommended> {
                                 ),
                                 child: InkWell(
                                   child: Text(
-                                    "ADD",
+                                    "- + 1",
                                     style: TextStyle(
                                       fontSize: 15.0,
                                       color: Colors.yellow,
@@ -1657,7 +1658,7 @@ class _RecommendedState extends State<Recommended> {
                                 ),
                                 child: InkWell(
                                   child: Text(
-                                    "ADD",
+                                    "- + 1",
                                     style: TextStyle(
                                       fontSize: 15.0,
                                       color: Colors.yellow,
@@ -1718,6 +1719,83 @@ class _RecommendedState extends State<Recommended> {
             ],
           ),
           SizedBox(height: 35.0),
-        ]));
+        ]),
+
+       bottomNavigationBar: BottomAppBar(
+          child: Container(
+           height: 50,
+           color: Colors.yellow[700],
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                InkWell(
+                child:Row(
+                  children: <Widget>[
+                    SizedBox(width: 20.0),
+                     Text('1',
+                      style: TextStyle(
+                        fontSize: 18.0,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
+                     ),
+                    SizedBox(width: 10.0),
+                    Text('Item',
+                      style: TextStyle(
+                        fontSize: 18.0,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
+                     ),
+                     SizedBox(width: 10.0),
+                     Text('|',
+                      style: TextStyle(
+                        fontSize: 18.0,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
+                     ),
+                    SizedBox(width: 10.0),
+                    Icon(
+                      Icons.attach_money,
+                      size: 24,
+                      color: Colors.white,
+                    ),
+                    Text(
+                      '23.0',
+                      style: TextStyle(
+                        fontSize: 18.0,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    SizedBox(width: 50.0),
+                    Text(
+                      'VIEW CART',
+                      style: TextStyle(
+                        fontSize: 18.0,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                     SizedBox(width: 10.0),
+                    Icon(
+                      Icons.card_travel,
+                      size: 24,
+                      color: Colors.white,
+                    ),
+                  ],
+                ),
+                onTap: () {
+                          Navigator.of(context).push(new MaterialPageRoute(
+                            builder: (BuildContext context) => Mycart(),
+                          ));
+                        },
+                ),
+              ],
+            ),
+          )
+      ),
+        );
   }
 }

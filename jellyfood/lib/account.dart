@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'account/favourites.dart';
 import 'account/manageaddress.dart';
 import 'account/payment.dart';
+import 'help/help.dart';
 import 'offers/restoffer.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -13,29 +14,12 @@ class ProfilePage extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.white,
-          title: Row(
-            children: <Widget>[
-              InkWell(
-                child: Icon(
-                  Icons.keyboard_arrow_left,
-                  color: Colors.black,
-                  size: 28,
-                ),
-                onTap: () {
-                  Navigator.pop(context);
-                },
-              ),
-              SizedBox(width: 10.0),
-              Text(
-                'MY ACCOUNT',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20.0,
-                ),
-              ),
-            ],
-          ),
+          title: Text('MY ACCOUNT',
+            style: TextStyle(
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black),
+          )
         ),
         body: Container(
             child: ListView(
@@ -229,40 +213,40 @@ class ProfilePage extends StatelessWidget {
               },
                   ),
             ),
-            Padding(
-              padding:
-                  const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 28.0),
-                  child:InkWell(
-              child: Row(
-                children: <Widget>[
-                  Icon(
-                    Icons.share,
-                    color: Colors.black54,
-                    size: 26,
-                  ),
-                  SizedBox(
-                    width: 15.0,
-                  ),
-                  Text(
-                    "Referrals",
-                    style: TextStyle(color: Colors.black, fontSize: 17.0),
-                  ),
-                  SizedBox(width: 200.0),
-                  Icon(
-                    Icons.keyboard_arrow_right,
-                    color: Colors.grey,
-                    size: 26,
-                  ),
-                  SizedBox(height: 14.0),
-                ],
-              ),
-              onTap: () {
-                Navigator.of(context).push(new MaterialPageRoute(
-                  builder: (BuildContext context) => new Payment(),
-                ));
-              },
-                  ),
-            ),
+            // Padding(
+            //   padding:
+            //       const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 28.0),
+            //       child:InkWell(
+            //   child: Row(
+            //     children: <Widget>[
+            //       Icon(
+            //         Icons.share,
+            //         color: Colors.black54,
+            //         size: 26,
+            //       ),
+            //       SizedBox(
+            //         width: 15.0,
+            //       ),
+            //       Text(
+            //         "Referrals",
+            //         style: TextStyle(color: Colors.black, fontSize: 17.0),
+            //       ),
+            //       SizedBox(width: 200.0),
+            //       Icon(
+            //         Icons.keyboard_arrow_right,
+            //         color: Colors.grey,
+            //         size: 26,
+            //       ),
+            //       SizedBox(height: 14.0),
+            //     ],
+            //   ),
+            //   onTap: () {
+            //     Navigator.of(context).push(new MaterialPageRoute(
+            //       builder: (BuildContext context) => new Payment(),
+            //     ));
+            //   },
+            //       ),
+            // ),
             Padding(
                 padding:
                     const EdgeInsets.only(left: 8.0, bottom: 30.0, top: 28.0),
@@ -309,6 +293,7 @@ class ProfilePage extends StatelessWidget {
                 )),
             Padding(
                 padding: EdgeInsets.only(top: 8.0, left: 8.0),
+                child:InkWell(
                 child: Row(
                   children: <Widget>[
                     Text(
@@ -322,7 +307,14 @@ class ProfilePage extends StatelessWidget {
                       size: 26,
                     ),
                   ],
-                )),
+                ),
+                onTap: () {
+                Navigator.of(context).push(new MaterialPageRoute(
+                  builder: (BuildContext context) => new Help(),
+                ));
+              },
+                ),
+                ),
             Padding(
               padding: const EdgeInsets.only(left: 8.0),
               child: Text(

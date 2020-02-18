@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jellyfood/model/recommend.dart';
 
-
-
+import 'mycart.dart';
 // import 'model/dinner.dart';
 // import 'model/second.dart';
 
@@ -232,13 +231,22 @@ class _ViewcartState extends State<Viewcart> {
                                   decoration: BoxDecoration(
                                     border: Border.all(color: Colors.grey),
                                   ),
-                                  child: Text(
-                                    "ADD",
-                                    style: TextStyle(
-                                      fontSize: 14.0,
-                                      color: Colors.green,
-                                      fontWeight: FontWeight.bold,
+                                  child: InkWell(
+                                    child: Text(
+                                      "- 1 +",
+                                      style: TextStyle(
+                                        fontSize: 14.0,
+                                        color: Colors.yellow,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
+                                    onTap: () {
+                                      Navigator.of(context)
+                                          .push(new MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            new Viewcart(),
+                                      ));
+                                    },
                                   ),
                                 )
                               ],
@@ -328,13 +336,22 @@ class _ViewcartState extends State<Viewcart> {
                                   decoration: BoxDecoration(
                                     border: Border.all(color: Colors.grey),
                                   ),
-                                  child: Text(
-                                    "ADD",
-                                    style: TextStyle(
-                                      fontSize: 14.0,
-                                      color: Colors.yellow,
-                                      fontWeight: FontWeight.bold,
+                                  child: InkWell(
+                                    child: Text(
+                                      "- 1 +",
+                                      style: TextStyle(
+                                        fontSize: 14.0,
+                                        color: Colors.yellow,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
+                                    onTap: () {
+                                      Navigator.of(context)
+                                          .push(new MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            new Viewcart(),
+                                      ));
+                                    },
                                   ),
                                 )
                               ],
@@ -431,13 +448,22 @@ class _ViewcartState extends State<Viewcart> {
                                   decoration: BoxDecoration(
                                     border: Border.all(color: Colors.grey),
                                   ),
-                                  child: Text(
-                                    "ADD",
-                                    style: TextStyle(
-                                      fontSize: 14.0,
-                                      color: Colors.yellow,
-                                      fontWeight: FontWeight.bold,
+                                  child: InkWell(
+                                    child: Text(
+                                      "- 1 +",
+                                      style: TextStyle(
+                                        fontSize: 14.0,
+                                        color: Colors.yellow,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
+                                    onTap: () {
+                                      Navigator.of(context)
+                                          .push(new MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            new Viewcart(),
+                                      ));
+                                    },
                                   ),
                                 )
                               ],
@@ -527,13 +553,22 @@ class _ViewcartState extends State<Viewcart> {
                                   decoration: BoxDecoration(
                                     border: Border.all(color: Colors.grey),
                                   ),
-                                  child: Text(
-                                    "ADD",
-                                    style: TextStyle(
-                                      fontSize: 14.0,
-                                      color: Colors.yellow,
-                                      fontWeight: FontWeight.bold,
+                                  child: InkWell(
+                                    child: Text(
+                                      "- 1 +",
+                                      style: TextStyle(
+                                        fontSize: 14.0,
+                                        color: Colors.yellow,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
+                                    onTap: () {
+                                      Navigator.of(context)
+                                          .push(new MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            new Viewcart(),
+                                      ));
+                                    },
                                   ),
                                 )
                               ],
@@ -630,13 +665,22 @@ class _ViewcartState extends State<Viewcart> {
                                   decoration: BoxDecoration(
                                     border: Border.all(color: Colors.grey),
                                   ),
-                                  child: Text(
-                                    "ADD",
-                                    style: TextStyle(
-                                      fontSize: 14.0,
-                                      color: Colors.yellow,
-                                      fontWeight: FontWeight.bold,
+                                  child: InkWell(
+                                    child: Text(
+                                      "- 1 +",
+                                      style: TextStyle(
+                                        fontSize: 14.0,
+                                        color: Colors.yellow,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
+                                    onTap: () {
+                                      Navigator.of(context)
+                                          .push(new MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            new Viewcart(),
+                                      ));
+                                    },
                                   ),
                                 )
                               ],
@@ -726,13 +770,22 @@ class _ViewcartState extends State<Viewcart> {
                                   decoration: BoxDecoration(
                                     border: Border.all(color: Colors.grey),
                                   ),
-                                  child: Text(
-                                    "ADD",
-                                    style: TextStyle(
-                                      fontSize: 14.0,
-                                      color: Colors.yellow,
-                                      fontWeight: FontWeight.bold,
+                                  child: InkWell(
+                                    child: Text(
+                                      "- 1 +",
+                                      style: TextStyle(
+                                        fontSize: 14.0,
+                                        color: Colors.yellow,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
+                                    onTap: () {
+                                      Navigator.of(context)
+                                          .push(new MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            new Viewcart(),
+                                      ));
+                                    },
                                   ),
                                 )
                               ],
@@ -829,13 +882,22 @@ class _ViewcartState extends State<Viewcart> {
                                   decoration: BoxDecoration(
                                     border: Border.all(color: Colors.grey),
                                   ),
-                                  child: Text(
-                                    "ADD",
-                                    style: TextStyle(
-                                      fontSize: 14.0,
-                                      color: Colors.yellow,
-                                      fontWeight: FontWeight.bold,
+                                  child: InkWell(
+                                    child: Text(
+                                      "- 1 +",
+                                      style: TextStyle(
+                                        fontSize: 14.0,
+                                        color: Colors.yellow,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
+                                    onTap: () {
+                                      Navigator.of(context)
+                                          .push(new MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            new Viewcart(),
+                                      ));
+                                    },
                                   ),
                                 )
                               ],
@@ -925,13 +987,22 @@ class _ViewcartState extends State<Viewcart> {
                                   decoration: BoxDecoration(
                                     border: Border.all(color: Colors.grey),
                                   ),
-                                  child: Text(
-                                    "ADD",
-                                    style: TextStyle(
-                                      fontSize: 14.0,
-                                      color: Colors.yellow,
-                                      fontWeight: FontWeight.bold,
+                                  child: InkWell(
+                                    child: Text(
+                                      "- 1 +",
+                                      style: TextStyle(
+                                        fontSize: 14.0,
+                                        color: Colors.yellow,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
+                                    onTap: () {
+                                      Navigator.of(context)
+                                          .push(new MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            new Viewcart(),
+                                      ));
+                                    },
                                   ),
                                 )
                               ],
@@ -1028,13 +1099,22 @@ class _ViewcartState extends State<Viewcart> {
                                   decoration: BoxDecoration(
                                     border: Border.all(color: Colors.grey),
                                   ),
-                                  child: Text(
-                                    "ADD",
-                                    style: TextStyle(
-                                      fontSize: 14.0,
-                                      color: Colors.yellow,
-                                      fontWeight: FontWeight.bold,
+                                  child: InkWell(
+                                    child: Text(
+                                      "- 1 +",
+                                      style: TextStyle(
+                                        fontSize: 14.0,
+                                        color: Colors.yellow,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
+                                    onTap: () {
+                                      Navigator.of(context)
+                                          .push(new MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            new Viewcart(),
+                                      ));
+                                    },
                                   ),
                                 )
                               ],
@@ -1124,13 +1204,22 @@ class _ViewcartState extends State<Viewcart> {
                                   decoration: BoxDecoration(
                                     border: Border.all(color: Colors.grey),
                                   ),
-                                  child: Text(
-                                    "ADD",
-                                    style: TextStyle(
-                                      fontSize: 14.0,
-                                      color: Colors.yellow,
-                                      fontWeight: FontWeight.bold,
+                                  child: InkWell(
+                                    child: Text(
+                                      "- 1 +",
+                                      style: TextStyle(
+                                        fontSize: 14.0,
+                                        color: Colors.yellow,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
+                                    onTap: () {
+                                      Navigator.of(context)
+                                          .push(new MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            new Viewcart(),
+                                      ));
+                                    },
                                   ),
                                 )
                               ],
@@ -1227,13 +1316,22 @@ class _ViewcartState extends State<Viewcart> {
                                   decoration: BoxDecoration(
                                     border: Border.all(color: Colors.grey),
                                   ),
-                                  child: Text(
-                                    "ADD",
-                                    style: TextStyle(
-                                      fontSize: 14.0,
-                                      color: Colors.yellow,
-                                      fontWeight: FontWeight.bold,
+                                  child: InkWell(
+                                    child: Text(
+                                      "- 1 +",
+                                      style: TextStyle(
+                                        fontSize: 14.0,
+                                        color: Colors.yellow,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
+                                    onTap: () {
+                                      Navigator.of(context)
+                                          .push(new MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            new Viewcart(),
+                                      ));
+                                    },
                                   ),
                                 )
                               ],
@@ -1320,13 +1418,22 @@ class _ViewcartState extends State<Viewcart> {
                                   decoration: BoxDecoration(
                                     border: Border.all(color: Colors.grey),
                                   ),
-                                  child: Text(
-                                    "ADD",
-                                    style: TextStyle(
-                                      fontSize: 14.0,
-                                      color: Colors.yellow,
-                                      fontWeight: FontWeight.bold,
+                                  child: InkWell(
+                                    child: Text(
+                                      "- 1 +",
+                                      style: TextStyle(
+                                        fontSize: 14.0,
+                                        color: Colors.yellow,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
+                                    onTap: () {
+                                      Navigator.of(context)
+                                          .push(new MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            new Viewcart(),
+                                      ));
+                                    },
                                   ),
                                 )
                               ],
@@ -1378,13 +1485,20 @@ class _ViewcartState extends State<Viewcart> {
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
                       ),
-                      child: Text(
-                        "ADD",
-                        style: TextStyle(
-                          fontSize: 15.0,
-                          color: Colors.yellow,
-                          fontWeight: FontWeight.bold,
+                      child: InkWell(
+                        child: Text(
+                          "- 1 +",
+                          style: TextStyle(
+                            fontSize: 14.0,
+                            color: Colors.yellow,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
+                        onTap: () {
+                          Navigator.of(context).push(new MaterialPageRoute(
+                            builder: (BuildContext context) => new Viewcart(),
+                          ));
+                        },
                       ),
                     ),
                   ],
@@ -1453,13 +1567,20 @@ class _ViewcartState extends State<Viewcart> {
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
                       ),
-                      child: Text(
-                        "ADD",
-                        style: TextStyle(
-                          fontSize: 15.0,
-                          color: Colors.yellow,
-                          fontWeight: FontWeight.bold,
+                      child: InkWell(
+                        child: Text(
+                          "- 1 +",
+                          style: TextStyle(
+                            fontSize: 14.0,
+                            color: Colors.yellow,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
+                        onTap: () {
+                          Navigator.of(context).push(new MaterialPageRoute(
+                            builder: (BuildContext context) => new Viewcart(),
+                          ));
+                        },
                       ),
                     ),
                   ],
@@ -1528,13 +1649,20 @@ class _ViewcartState extends State<Viewcart> {
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
                       ),
-                      child: Text(
-                        "ADD",
-                        style: TextStyle(
-                          fontSize: 15.0,
-                          color: Colors.yellow,
-                          fontWeight: FontWeight.bold,
+                      child: InkWell(
+                        child: Text(
+                          "- 1 +",
+                          style: TextStyle(
+                            fontSize: 14.0,
+                            color: Colors.yellow,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
+                        onTap: () {
+                          Navigator.of(context).push(new MaterialPageRoute(
+                            builder: (BuildContext context) => new Viewcart(),
+                          ));
+                        },
                       ),
                     ),
                   ],
@@ -1603,13 +1731,20 @@ class _ViewcartState extends State<Viewcart> {
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
                       ),
-                      child: Text(
-                        "ADD",
-                        style: TextStyle(
-                          fontSize: 15.0,
-                          color: Colors.yellow,
-                          fontWeight: FontWeight.bold,
+                      child: InkWell(
+                        child: Text(
+                          "- 1 +",
+                          style: TextStyle(
+                            fontSize: 14.0,
+                            color: Colors.yellow,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
+                        onTap: () {
+                          Navigator.of(context).push(new MaterialPageRoute(
+                            builder: (BuildContext context) => new Viewcart(),
+                          ));
+                        },
                       ),
                     ),
                   ],
@@ -1678,13 +1813,20 @@ class _ViewcartState extends State<Viewcart> {
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
                       ),
-                      child: Text(
-                        "ADD",
-                        style: TextStyle(
-                          fontSize: 15.0,
-                          color: Colors.yellow,
-                          fontWeight: FontWeight.bold,
+                      child: InkWell(
+                        child: Text(
+                          "- 1 +",
+                          style: TextStyle(
+                            fontSize: 14.0,
+                            color: Colors.yellow,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
+                        onTap: () {
+                          Navigator.of(context).push(new MaterialPageRoute(
+                            builder: (BuildContext context) => new Viewcart(),
+                          ));
+                        },
                       ),
                     ),
                   ],
@@ -1751,13 +1893,20 @@ class _ViewcartState extends State<Viewcart> {
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
                       ),
-                      child: Text(
-                        "ADD",
-                        style: TextStyle(
-                          fontSize: 15.0,
-                          color: Colors.yellow,
-                          fontWeight: FontWeight.bold,
+                      child: InkWell(
+                        child: Text(
+                          "- 1 +",
+                          style: TextStyle(
+                            fontSize: 14.0,
+                            color: Colors.yellow,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
+                        onTap: () {
+                          Navigator.of(context).push(new MaterialPageRoute(
+                            builder: (BuildContext context) => new Viewcart(),
+                          ));
+                        },
                       ),
                     ),
                   ],
@@ -1814,13 +1963,20 @@ class _ViewcartState extends State<Viewcart> {
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
                       ),
-                      child: Text(
-                        "ADD",
-                        style: TextStyle(
-                          fontSize: 15.0,
-                          color: Colors.yellow,
-                          fontWeight: FontWeight.bold,
+                      child: InkWell(
+                        child: Text(
+                          "- 1 +",
+                          style: TextStyle(
+                            fontSize: 14.0,
+                            color: Colors.yellow,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
+                        onTap: () {
+                          Navigator.of(context).push(new MaterialPageRoute(
+                            builder: (BuildContext context) => new Viewcart(),
+                          ));
+                        },
                       ),
                     ),
                   ],
@@ -1877,13 +2033,20 @@ class _ViewcartState extends State<Viewcart> {
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
                       ),
-                      child: Text(
-                        "ADD",
-                        style: TextStyle(
-                          fontSize: 15.0,
-                          color: Colors.yellow,
-                          fontWeight: FontWeight.bold,
+                      child: InkWell(
+                        child: Text(
+                          "- 1 +",
+                          style: TextStyle(
+                            fontSize: 14.0,
+                            color: Colors.yellow,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
+                        onTap: () {
+                          Navigator.of(context).push(new MaterialPageRoute(
+                            builder: (BuildContext context) => new Viewcart(),
+                          ));
+                        },
                       ),
                     ),
                   ],
@@ -1940,13 +2103,20 @@ class _ViewcartState extends State<Viewcart> {
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
                       ),
-                      child: Text(
-                        "ADD",
-                        style: TextStyle(
-                          fontSize: 15.0,
-                          color: Colors.yellow,
-                          fontWeight: FontWeight.bold,
+                      child: InkWell(
+                        child: Text(
+                          "- 1 +",
+                          style: TextStyle(
+                            fontSize: 14.0,
+                            color: Colors.yellow,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
+                        onTap: () {
+                          Navigator.of(context).push(new MaterialPageRoute(
+                            builder: (BuildContext context) => new Viewcart(),
+                          ));
+                        },
                       ),
                     ),
                   ],
@@ -2003,13 +2173,20 @@ class _ViewcartState extends State<Viewcart> {
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
                       ),
-                      child: Text(
-                        "ADD",
-                        style: TextStyle(
-                          fontSize: 15.0,
-                          color: Colors.yellow,
-                          fontWeight: FontWeight.bold,
+                      child: InkWell(
+                        child: Text(
+                          "- 1 +",
+                          style: TextStyle(
+                            fontSize: 14.0,
+                            color: Colors.yellow,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
+                        onTap: () {
+                          Navigator.of(context).push(new MaterialPageRoute(
+                            builder: (BuildContext context) => new Viewcart(),
+                          ));
+                        },
                       ),
                     ),
                   ],
@@ -2076,13 +2253,20 @@ class _ViewcartState extends State<Viewcart> {
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
                       ),
-                      child: Text(
-                        "ADD",
-                        style: TextStyle(
-                          fontSize: 15.0,
-                          color: Colors.yellow,
-                          fontWeight: FontWeight.bold,
+                      child: InkWell(
+                        child: Text(
+                          "- 1 +",
+                          style: TextStyle(
+                            fontSize: 14.0,
+                            color: Colors.yellow,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
+                        onTap: () {
+                          Navigator.of(context).push(new MaterialPageRoute(
+                            builder: (BuildContext context) => new Viewcart(),
+                          ));
+                        },
                       ),
                     ),
                   ],
@@ -2099,7 +2283,7 @@ class _ViewcartState extends State<Viewcart> {
                     ),
                     SizedBox(width: 2.0),
                     Text(
-                      '99.0',
+                      '23.0',
                       style: TextStyle(
                         fontSize: 17.0,
                         color: Colors.grey,
@@ -2139,13 +2323,20 @@ class _ViewcartState extends State<Viewcart> {
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
                       ),
-                      child: Text(
-                        "ADD",
-                        style: TextStyle(
-                          fontSize: 15.0,
-                          color: Colors.yellow,
-                          fontWeight: FontWeight.bold,
+                      child: InkWell(
+                        child: Text(
+                          "- 1 +",
+                          style: TextStyle(
+                            fontSize: 14.0,
+                            color: Colors.yellow,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
+                        onTap: () {
+                          Navigator.of(context).push(new MaterialPageRoute(
+                            builder: (BuildContext context) => new Viewcart(),
+                          ));
+                        },
                       ),
                     ),
                   ],
@@ -2162,7 +2353,7 @@ class _ViewcartState extends State<Viewcart> {
                     ),
                     SizedBox(width: 2.0),
                     Text(
-                      '99.0',
+                      '23.0',
                       style: TextStyle(
                         fontSize: 17.0,
                         color: Colors.grey,
@@ -2202,13 +2393,20 @@ class _ViewcartState extends State<Viewcart> {
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
                       ),
-                      child: Text(
-                        "ADD",
-                        style: TextStyle(
-                          fontSize: 15.0,
-                          color: Colors.yellow,
-                          fontWeight: FontWeight.bold,
+                      child: InkWell(
+                        child: Text(
+                          "- 1 +",
+                          style: TextStyle(
+                            fontSize: 14.0,
+                            color: Colors.yellow,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
+                        onTap: () {
+                          Navigator.of(context).push(new MaterialPageRoute(
+                            builder: (BuildContext context) => new Viewcart(),
+                          ));
+                        },
                       ),
                     ),
                   ],
@@ -2225,7 +2423,7 @@ class _ViewcartState extends State<Viewcart> {
                     ),
                     SizedBox(width: 2.0),
                     Text(
-                      '99.0',
+                      '23.0',
                       style: TextStyle(
                         fontSize: 17.0,
                         color: Colors.grey,
@@ -2265,13 +2463,20 @@ class _ViewcartState extends State<Viewcart> {
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
                       ),
-                      child: Text(
-                        "ADD",
-                        style: TextStyle(
-                          fontSize: 15.0,
-                          color: Colors.yellow,
-                          fontWeight: FontWeight.bold,
+                      child: InkWell(
+                        child: Text(
+                          "- 1 +",
+                          style: TextStyle(
+                            fontSize: 14.0,
+                            color: Colors.yellow,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
+                        onTap: () {
+                          Navigator.of(context).push(new MaterialPageRoute(
+                            builder: (BuildContext context) => new Viewcart(),
+                          ));
+                        },
                       ),
                     ),
                   ],
@@ -2288,7 +2493,7 @@ class _ViewcartState extends State<Viewcart> {
                     ),
                     SizedBox(width: 2.0),
                     Text(
-                      '99.0',
+                      '23.0',
                       style: TextStyle(
                         fontSize: 17.0,
                         color: Colors.grey,
@@ -2328,13 +2533,20 @@ class _ViewcartState extends State<Viewcart> {
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
                       ),
-                      child: Text(
-                        "ADD",
-                        style: TextStyle(
-                          fontSize: 15.0,
-                          color: Colors.yellow,
-                          fontWeight: FontWeight.bold,
+                      child: InkWell(
+                        child: Text(
+                          "- 1 +",
+                          style: TextStyle(
+                            fontSize: 14.0,
+                            color: Colors.yellow,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
+                        onTap: () {
+                          Navigator.of(context).push(new MaterialPageRoute(
+                            builder: (BuildContext context) => new Viewcart(),
+                          ));
+                        },
                       ),
                     ),
                   ],
@@ -2351,7 +2563,7 @@ class _ViewcartState extends State<Viewcart> {
                     ),
                     SizedBox(width: 2.0),
                     Text(
-                      '99.0',
+                      '23.0',
                       style: TextStyle(
                         fontSize: 17.0,
                         color: Colors.grey,
@@ -2362,16 +2574,17 @@ class _ViewcartState extends State<Viewcart> {
                 )),
             SizedBox(height: 25.0),
           ],
-        ),        
+        ),
       ),
       bottomNavigationBar: BottomAppBar(
           child: Container(
            height: 50,
-           color: Colors.yellowAccent,
+           color: Colors.yellow[700],
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
-                Row(
+                InkWell(
+                child:Row(
                   children: <Widget>[
                     SizedBox(width: 20.0),
                      Text('1',
@@ -2404,7 +2617,7 @@ class _ViewcartState extends State<Viewcart> {
                       color: Colors.white,
                     ),
                     Text(
-                      '99.0',
+                      '23.0',
                       style: TextStyle(
                         fontSize: 18.0,
                         color: Colors.white,
@@ -2428,12 +2641,16 @@ class _ViewcartState extends State<Viewcart> {
                     ),
                   ],
                 ),
-               
+                onTap: () {
+                          Navigator.of(context).push(new MaterialPageRoute(
+                            builder: (BuildContext context) => Mycart(),
+                          ));
+                        },
+                ),
               ],
             ),
           )
       ),
-
     );
   }
 }

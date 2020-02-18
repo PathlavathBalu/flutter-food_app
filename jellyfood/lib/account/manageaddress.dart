@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:jellyfood/account/showdialog.dart';
+
+//import 'manageaddress1.dart';
 
 class Manageaddress extends StatelessWidget {
   @override
@@ -97,20 +100,35 @@ class _SavedState extends State<Saved> {
             padding: const EdgeInsets.only(left: 50.0, bottom: 15.0),
             child: Row(
               children: <Widget>[
-                Text(
+                InkWell(
+                child:Text(
                   'EDIT',
                   style: TextStyle(
                       fontSize: 18.0,
                       color: Colors.green[800],
                       fontWeight: FontWeight.bold),
                 ),
+              //   onTap: () {
+              //   Navigator.of(context).push(new MaterialPageRoute(
+              //     builder: (BuildContext context) => new Manageaddress1(),
+              //   ));
+              // },
+                ),
                 SizedBox(width: 40),
-                Text(
-                  'DELETE',
-                  style: TextStyle(
-                      fontSize: 18.0,
-                      color: Colors.green[800],
-                      fontWeight: FontWeight.bold),
+                FlatButton(
+                  child: Text(
+                    'DELETE',
+                    style: TextStyle(
+                        fontSize: 18.0,
+                        color: Colors.green[800],
+                        fontWeight: FontWeight.bold),
+                  ),
+                  onPressed: () {
+                    showDialog(
+        context: context,
+        builder: (_) => LogoutOverlay(),
+      );
+                  },
                 ),
               ],
             ),
@@ -124,7 +142,8 @@ class _SavedState extends State<Saved> {
               border: Border.all(color: Colors.green[900]),
             ),
             child: Padding(
-              padding: const EdgeInsets.only(top:12.0, right: 12.0, left:70.0,bottom:12.0),
+              padding: const EdgeInsets.only(
+                  top: 12.0, right: 12.0, left: 70.0, bottom: 12.0),
               child: Text(
                 "ADD NEW ADDRESS",
                 style: TextStyle(

@@ -2284,7 +2284,7 @@ class _DetailState extends State<Detail> {
                     ),
                     SizedBox(width: 2.0),
                     Text(
-                      '99.0',
+                      '23.0',
                       style: TextStyle(
                         fontSize: 17.0,
                         color: Colors.grey,
@@ -2354,7 +2354,7 @@ class _DetailState extends State<Detail> {
                     ),
                     SizedBox(width: 2.0),
                     Text(
-                      '99.0',
+                      '23.0',
                       style: TextStyle(
                         fontSize: 17.0,
                         color: Colors.grey,
@@ -2424,7 +2424,7 @@ class _DetailState extends State<Detail> {
                     ),
                     SizedBox(width: 2.0),
                     Text(
-                      '99.0',
+                      '23.0',
                       style: TextStyle(
                         fontSize: 17.0,
                         color: Colors.grey,
@@ -2494,7 +2494,7 @@ class _DetailState extends State<Detail> {
                     ),
                     SizedBox(width: 2.0),
                     Text(
-                      '99.0',
+                      '23.0',
                       style: TextStyle(
                         fontSize: 17.0,
                         color: Colors.grey,
@@ -2564,7 +2564,7 @@ class _DetailState extends State<Detail> {
                     ),
                     SizedBox(width: 2.0),
                     Text(
-                      '99.0',
+                      '23.0',
                       style: TextStyle(
                         fontSize: 17.0,
                         color: Colors.grey,
