@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:jellyfood/account.dart';
 import 'package:jellyfood/account/paymentdialog.dart';
 
 import 'amazonpaydialog.dart';
@@ -23,11 +22,9 @@ class Payment extends StatelessWidget {
                   color: Colors.black,
                   size: 24,
                 ),
-                 onTap: () {
-                Navigator.of(context).push(new MaterialPageRoute(
-                  builder: (BuildContext context) => new ProfilePage(),
-                ));
-              },
+                onTap: () {
+                  Navigator.pop(context);
+                },
               ),
               SizedBox(width: 10.0),
               Text(

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:jellyfood/logout.dart';
 
 import 'account/favourites.dart';
 import 'account/manageaddress.dart';
 import 'account/payment.dart';
+//import 'account/paymentdialog.dart';
 import 'help/help.dart';
 import 'offers/restoffer.dart';
 
@@ -322,7 +324,8 @@ class ProfilePage extends StatelessWidget {
                 style: TextStyle(color: Colors.grey, fontSize: 14.0),
               ),
             ),
-            Padding(
+            FlatButton(
+            child:Padding(
                 padding: EdgeInsets.only(top: 28.0, left: 8.0),
                 child: Container(
                   color: Colors.white,
@@ -337,7 +340,7 @@ class ProfilePage extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                             fontSize: 17.0),
                       ),
-                      SizedBox(width: 220.0),
+                      SizedBox(width: 188.0),
                       Icon(
                         Icons.settings_power,
                         color: Colors.grey,
@@ -346,6 +349,13 @@ class ProfilePage extends StatelessWidget {
                     ],
                   ),
                 )),
+                 onPressed: () {
+                      showDialog(
+                    context: context,
+                    builder: (_) => Logout(),
+                  );
+                    },
+             ),
           ],
         )),
       ),

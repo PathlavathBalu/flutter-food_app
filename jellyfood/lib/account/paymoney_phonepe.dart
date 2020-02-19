@@ -4,7 +4,7 @@ import 'package:jellyfood/account/paymentdialog.dart';
 import 'amazonpaydialog.dart';
 import 'mobikwikdialog.dart';
 import 'paytmdialog.dart';
-import 'phoepaydialog.dart';
+//import 'phoepaydialog.dart';
 
 class PaymoneyPhonepe extends StatelessWidget {
   @override
@@ -192,8 +192,8 @@ class _SavedState extends State<Saved> {
         },
         ),
         SizedBox(height: 15),
-        FlatButton(
-        child:Container(
+        //FlatButton(
+        Container(
           decoration: BoxDecoration(
             border: Border(
               bottom: BorderSide(color: Colors.grey[300]),
@@ -235,13 +235,13 @@ class _SavedState extends State<Saved> {
             ),
           ),
         ),
-        onPressed: () {
-                    showDialog(
-        context: context,
-        builder: (_) => Phonepaydialog(),
-      );
-        },
-        ),
+      //   onPressed: () {
+      //               showDialog(
+      //   context: context,
+      //   builder: (_) => Phonepaydialog(),
+      // );
+      //   },
+      //   ),
         SizedBox(height: 15),
         FlatButton(
         child:Container(

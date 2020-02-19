@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:jellyfood/detail.dart';
+
 class Restaurantoffers extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(    
+    return Scaffold(
       body: MyHomePage(),
     );
   }
@@ -38,7 +40,7 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
         //floatingActionButton: MyActionButton(),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-       // bottomNavigationBar: MyAppbar(),
+        // bottomNavigationBar: MyAppbar(),
         body: Container(
           child: ListView(
             children: <Widget>[
@@ -51,9 +53,6 @@ class MyHomePage extends StatelessWidget {
         ));
   }
 }
-
-
-
 
 class MenuItemsList extends StatelessWidget {
   const MenuItemsList({
@@ -80,15 +79,15 @@ class MenuItemsList extends StatelessWidget {
           SizedBox(height: 15.0),
           MenuItem(),
           SizedBox(height: 15.0),
-           MenuItem(),
-          SizedBox(height: 15.0),
           MenuItem(),
           SizedBox(height: 15.0),
           MenuItem(),
           SizedBox(height: 15.0),
           MenuItem(),
           SizedBox(height: 15.0),
-           MenuItem(),
+          MenuItem(),
+          SizedBox(height: 15.0),
+          MenuItem(),
           SizedBox(height: 15.0),
           MenuItem(),
           SizedBox(height: 15.0),
@@ -117,9 +116,16 @@ class MenuItem extends StatelessWidget {
           Container(
             height: 100.0,
             width: 100.0,
-            child: Image.network(
-              burgerImage,
-              fit: BoxFit.cover,
+            child: InkWell(
+              child: Image.network(
+                burgerImage,
+                fit: BoxFit.cover,
+              ),
+              onTap: () {
+                Navigator.of(context).push(new MaterialPageRoute(
+                  builder: (BuildContext context) => new Detail(),
+                ));
+              },
             ),
           ),
           SizedBox(
@@ -155,21 +161,21 @@ class MenuItem extends StatelessWidget {
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
                 Container(
-                    width: 200.0,
-                    child: Text(
-                      'Chicken, Yogurt, Red chilli, Ginger paste, Carlic paste, ...',
-                      style: TextStyle(color: Colors.grey),
-                    ),
-                    ),
-                    Row(
-                      children: <Widget>[
-                        Image.asset('images/offer1.png'),
-                      Text(
+                  width: 200.0,
+                  child: Text(
+                    'Chicken, Yogurt, Red chilli, Ginger paste, Carlic paste, ...',
+                    style: TextStyle(color: Colors.grey),
+                  ),
+                ),
+                Row(
+                  children: <Widget>[
+                    Image.asset('images/offer1.png'),
+                    Text(
                       '40%off on ordersabove...',
-                      style: TextStyle(color: Colors.grey,fontSize: 15.0),
+                      style: TextStyle(color: Colors.grey, fontSize: 15.0),
                     ),
-                      ],
-                    ),
+                  ],
+                ),
               ],
             ),
           )
@@ -178,8 +184,6 @@ class MenuItem extends StatelessWidget {
     );
   }
 }
-
-
 
 class FoodListview extends StatelessWidget {
   const FoodListview({
@@ -191,7 +195,7 @@ class FoodListview extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 8.0),
       child: Container(
-        height: 200.0,      
+        height: 200.0,
         child: ListView(
           scrollDirection: Axis.horizontal,
           children: <Widget>[
@@ -206,7 +210,6 @@ class FoodListview extends StatelessWidget {
   }
 }
 
-
 class ItemCard extends StatelessWidget {
   const ItemCard({
     Key key,
@@ -216,49 +219,56 @@ class ItemCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(right: 8.0),
-      child: Container(
-          height: 190.0,
-          width: 300.0,
-          decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: NetworkImage(meatImage), fit: BoxFit.cover)),
-          child: Stack(
-            children: <Widget>[
-              Container(
-                height: 190.0,
-                width: 300.0,
-                decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                        colors: [Colors.black.withOpacity(0.1), Colors.black],
-                        begin: Alignment.topCenter,
-                        end: Alignment.bottomCenter)),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Spacer(),
-                    Text(
-                      '25% OFF',
-                      style: TextStyle(
-                          color: textYellow,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 24.0,
-                          letterSpacing: 1.1),
-                    ),
-                    Text(
-                      'ON FIRST 3 ORDERS',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16.0,
-                          letterSpacing: 1.1),
-                    ),
-                  ],
+      child: InkWell(
+        child: Container(
+            height: 190.0,
+            width: 300.0,
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: NetworkImage(meatImage), fit: BoxFit.cover)),
+            child: Stack(
+              children: <Widget>[
+                Container(
+                  height: 190.0,
+                  width: 300.0,
+                  decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                          colors: [Colors.black.withOpacity(0.1), Colors.black],
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter)),
                 ),
-              ),
-            ],
-          )),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Spacer(),
+                      Text(
+                        '25% OFF',
+                        style: TextStyle(
+                            color: textYellow,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24.0,
+                            letterSpacing: 1.1),
+                      ),
+                      Text(
+                        'ON FIRST 3 ORDERS',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16.0,
+                            letterSpacing: 1.1),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            )),
+        onTap: () {
+          Navigator.of(context).push(new MaterialPageRoute(
+            builder: (BuildContext context) => new Detail(),
+          ));
+        },
+      ),
     );
   }
 }

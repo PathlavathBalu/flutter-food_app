@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jellyfood/account/paymentdialog.dart';
+//import 'package:jellyfood/account/paymentdialog.dart';
 
 import 'amazonpaydialog.dart';
 import 'mobikwikdialog.dart';
@@ -66,8 +66,8 @@ class _SavedState extends State<Saved> {
           ),
         ),
         SizedBox(height: 10),
-        FlatButton(
-        child:Container(
+        //FlatButton(
+        Container(
           decoration: BoxDecoration(
             border: Border(
               bottom: BorderSide(color: Colors.grey[300]),
@@ -108,13 +108,13 @@ class _SavedState extends State<Saved> {
             ),
           ),
         ),
-         onPressed: () {
-                    showDialog(
-        context: context,
-        builder: (_) => Paymentdialog(),
-      );
-        },
-        ),
+      //    onPressed: () {
+      //               showDialog(
+      //   context: context,
+      //   builder: (_) => Paymentdialog(),
+      // );
+      //   },
+        //),
         SizedBox(height: 15),
         FlatButton(
         child:Container(

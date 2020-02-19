@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:jellyfood/account/payment.dart';
 
 import 'paymoney_mobikwik.dart';
 class MobikwikProceed extends StatelessWidget {
@@ -19,10 +18,8 @@ class MobikwikProceed extends StatelessWidget {
                   size: 24,
                 ),
                 onTap: () {
-                Navigator.of(context).push(new MaterialPageRoute(
-                  builder: (BuildContext context) => new Payment(),
-                ));
-              },
+                  Navigator.pop(context);
+                },
               ),
               SizedBox(width: 10.0),
               Text(

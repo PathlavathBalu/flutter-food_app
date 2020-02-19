@@ -24,6 +24,7 @@ var burgerImage =
 var chickenImage =
     'https://images.unsplash.com/photo-1532550907401-a500c9a57435?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80';
 
+
 // COLORS
 var textYellow = Color(0xFFf6c24d);
 var iconYellow = Color(0xFFf4bf47);
@@ -70,7 +71,7 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top:8.0),
+                    padding: const EdgeInsets.only(top:8.0, right: 90.0),
                     child:InkWell(
                     child: Icon(
                           Icons.keyboard_arrow_down,
@@ -84,47 +85,8 @@ class MyApp extends StatelessWidget {
                   },
                     ),
                   ),
-                  // Text(
-                  //   '.......',
-                  //   style: TextStyle(
-                  //     color: Colors.black,
-                  //     fontSize: 15.0,
-                  //   ),
-                  // )
                 ],
-              ),
-
-              // Padding(
-              //   padding: EdgeInsets.only(bottom: 15.0),
-              //   child:
-              //       Icon(Icons.arrow_forward, color: Colors.black, size: 12.0),
-              // ),
-
-              // SizedBox(width: 30.0),
-              Column(
-                children: <Widget>[
-                  SizedBox(
-                    height: 10.0,
-                  ),
-                  Container(
-                    height: 20.0,
-                    width: 70.0,
-                    child: TextField(
-                      decoration: InputDecoration(
-                          border:
-                              OutlineInputBorder(borderSide: BorderSide.none)),
-                    ),
-                  ),
-                  SizedBox(height: 5.0),
-                  // Text(
-                  //   '......................',
-                  //   style: TextStyle(
-                  //     color: Colors.black,
-                  //     fontSize: 15.0,
-                  //   ),
-                  // )
-                ],
-              ),
+              ),              
               Container(
                 child: InkWell(
                   child: Image.asset('images/offer1.png'),
@@ -152,26 +114,6 @@ class MyApp extends StatelessWidget {
                   },
                 ),
               ),
-              // Container(
-              //   padding: EdgeInsets.fromLTRB(0.0, 18.0, 0.0, 18.0),
-              //   height: 10.0,
-              //   width: 30.0,
-              //   child: Material(
-              //     color: Colors.orange,
-              //     shape: OutlineInputBorder(
-              //         borderSide: BorderSide(width: 1.0, color: Colors.orange),
-              //         borderRadius: BorderRadius.circular(1)),
-              //     child: Center(
-              //       child: Text(
-              //         'New',
-              //         style: TextStyle(
-              //             fontSize: 10.0,
-              //             fontWeight: FontWeight.bold,
-              //             color: Colors.white),
-              //       ),
-              //     ),
-              //   ),
-              // ),
               SizedBox(width: 10.0),
             ],
           ),
@@ -211,9 +153,9 @@ class MenuItemsList extends StatelessWidget {
           SizedBox(height: 16.0),
           MenuItem(),
           SizedBox(height: 15.0),
-          MenuItem(),
+          MenuItem1(),
           SizedBox(height: 15.0),
-          MenuItem(),
+          MenuItem2(),
           SizedBox(height: 15.0),
           MenuItem(),
           SizedBox(height: 15.0),
@@ -257,6 +199,174 @@ class MenuItem extends StatelessWidget {
             child: InkWell(
               child: Image.network(
                 burgerImage,
+                fit: BoxFit.cover,
+              ),
+              onTap: () {
+                Navigator.of(context).push(new MaterialPageRoute(
+                  builder: (BuildContext context) => new Detail(),
+                ));
+              },
+            ),
+          ),
+          SizedBox(
+            width: 16.0,
+          ),
+          Container(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Container(
+                  decoration: BoxDecoration(
+                      color: iconYellow,
+                      borderRadius: BorderRadius.circular(4.0)),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 8.0, vertical: 4.0),
+                    child: Row(
+                      children: <Widget>[
+                        Icon(
+                          Icons.star,
+                          size: 15.0,
+                        ),
+                        Text('4.5')
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 8.0,
+                ),
+                Text(
+                  'Special Chicken Burger',
+                  style: TextStyle(fontWeight: FontWeight.w600),
+                ),
+                Container(
+                  width: 200.0,
+                  child: Text(
+                    'Chicken, Yogurt, Red chilli, Ginger paste, Carlic paste, ...',
+                    style: TextStyle(color: Colors.grey),
+                  ),
+                ),
+                Row(
+                  children: <Widget>[
+                    Image.asset('images/offer1.png'),
+                    Text(
+                      '40%off on ordersabove...',
+                      style: TextStyle(color: Colors.grey, fontSize: 15.0),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class MenuItem1 extends StatelessWidget {
+  const MenuItem1({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8.0),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Container(
+            height: 100.0,
+            width: 100.0,
+            child: InkWell(
+              child: Image.network(
+               chickenImage,
+                fit: BoxFit.cover,
+              ),
+              onTap: () {
+                Navigator.of(context).push(new MaterialPageRoute(
+                  builder: (BuildContext context) => new Detail(),
+                ));
+              },
+            ),
+          ),
+          SizedBox(
+            width: 16.0,
+          ),
+          Container(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Container(
+                  decoration: BoxDecoration(
+                      color: iconYellow,
+                      borderRadius: BorderRadius.circular(4.0)),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 8.0, vertical: 4.0),
+                    child: Row(
+                      children: <Widget>[
+                        Icon(
+                          Icons.star,
+                          size: 15.0,
+                        ),
+                        Text('4.5')
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 8.0,
+                ),
+                Text(
+                  'Special Chicken Burger',
+                  style: TextStyle(fontWeight: FontWeight.w600),
+                ),
+                Container(
+                  width: 200.0,
+                  child: Text(
+                    'Chicken, Yogurt, Red chilli, Ginger paste, Carlic paste, ...',
+                    style: TextStyle(color: Colors.grey),
+                  ),
+                ),
+                Row(
+                  children: <Widget>[
+                    Image.asset('images/offer1.png'),
+                    Text(
+                      '40%off on ordersabove...',
+                      style: TextStyle(color: Colors.grey, fontSize: 15.0),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class MenuItem2 extends StatelessWidget {
+  const MenuItem2({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8.0),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Container(
+            height: 100.0,
+            width: 100.0,
+            child: InkWell(
+              child: Image.network(
+               foodImage,
                 fit: BoxFit.cover,
               ),
               onTap: () {

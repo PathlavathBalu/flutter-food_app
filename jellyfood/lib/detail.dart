@@ -90,7 +90,7 @@ class _DetailState extends State<Detail> {
                         width: 5.0,
                       ),
                       Text(
-                        "34, Banani-11, Chennai; ",
+                        "34, Banani-11, Hyderabad; ",
                         style: TextStyle(fontSize: 14.0, color: Colors.black),
                       ),
                     ],
