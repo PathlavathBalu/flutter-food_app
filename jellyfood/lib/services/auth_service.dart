@@ -20,7 +20,7 @@ class AuthService {
         _firestore.collection('/users').document(signedInUser.uid).setData({
           'name': name,
           'email': email,
-          //'profileImageUrl': '', 
+          //'profileImageUrl': '',
         });
         Provider.of<UserData>(context).currentUserId = signedInUser.uid;
         Navigator.pop(context);

@@ -11,7 +11,7 @@ class _CouponsofferState extends State<Couponsoffer> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-         appBar: AppBar(
+        appBar: AppBar(
           backgroundColor: Colors.white,
           title: Row(
             children: <Widget>[
@@ -45,27 +45,27 @@ class _CouponsofferState extends State<Couponsoffer> {
               child: Container(
                 width: 300.0,
                 decoration: BoxDecoration(
-                          //color: Colors.yellow[100],
-                          border: Border.all(color: Colors.grey),
-                        ),
+                  //color: Colors.yellow[100],
+                  border: Border.all(color: Colors.grey),
+                ),
                 child: Padding(
                   padding: const EdgeInsets.all(6.0),
                   child: Row(
                     children: <Widget>[
-                         Container(
-                           width: 280,
-                            padding: const EdgeInsets.only(left:8.0),
-                           child: TextField(
-                                  decoration: InputDecoration(
-                                    border: InputBorder.none,
-                                    hintText: 'Enter Coupon Code'
-                                  ),
-                                ),
-                         ),
-                       Text(
-                    'APPLY',
-                    style: TextStyle(fontSize: 16.0, color: Colors.yellow[900]),
-                  ),
+                      Container(
+                        width: 280,
+                        padding: const EdgeInsets.only(left: 8.0),
+                        child: TextField(
+                          decoration: InputDecoration(
+                              border: InputBorder.none,
+                              hintText: 'Enter Coupon Code'),
+                        ),
+                      ),
+                      Text(
+                        'APPLY',
+                        style: TextStyle(
+                            fontSize: 16.0, color: Colors.yellow[900]),
+                      ),
                     ],
                   ),
                 ),
@@ -118,7 +118,10 @@ class _CouponsofferState extends State<Couponsoffer> {
                 ),
                 Text(
                   'APPLY',
-                  style: TextStyle(fontSize: 17.0, color: Colors.green[800], fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                      fontSize: 17.0,
+                      color: Colors.green[800],
+                      fontWeight: FontWeight.bold),
                 ),
               ],
             ),
@@ -160,7 +163,8 @@ class _CouponsofferState extends State<Couponsoffer> {
               ),
             ),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -182,7 +186,8 @@ class _CouponsofferState extends State<Couponsoffer> {
                 )),
             SizedBox(height: 8.0),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -204,7 +209,8 @@ class _CouponsofferState extends State<Couponsoffer> {
                 )),
             SizedBox(height: 8.0),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -226,7 +232,8 @@ class _CouponsofferState extends State<Couponsoffer> {
                 )),
             SizedBox(height: 8.0),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -238,19 +245,20 @@ class _CouponsofferState extends State<Couponsoffer> {
                     ),
                     SizedBox(width: 8.0),
                     Expanded(
-                    child:Text(
-                      'Offer valid once per user per month during the offer period',
-                      style: TextStyle(
-                        fontSize: 16.0,
-                        color: Colors.grey,
+                      child: Text(
+                        'Offer valid once per user per month during the offer period',
+                        style: TextStyle(
+                          fontSize: 16.0,
+                          color: Colors.grey,
+                        ),
                       ),
-                    ),
                     ),
                   ],
                 )),
             SizedBox(height: 8.0),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -272,10 +280,11 @@ class _CouponsofferState extends State<Couponsoffer> {
                 )),
             SizedBox(height: 8.0),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
-                    Container(                    
+                    Container(
                       child: Icon(
                         Icons.brightness_1,
                         size: 10.0,
@@ -295,16 +304,15 @@ class _CouponsofferState extends State<Couponsoffer> {
             SizedBox(height: 10.0),
             Container(
               decoration: BoxDecoration(
-                  border: Border(
-                    bottom: BorderSide(color: Colors.grey[300]),
-                  ),
+                border: Border(
+                  bottom: BorderSide(color: Colors.grey[300]),
                 ),
+              ),
             ),
-             SizedBox(height: 28.0),
-
-             Row(
-               children: <Widget>[
-                 Padding(
+            SizedBox(height: 28.0),
+            Row(
+              children: <Widget>[
+                Padding(
                   padding: const EdgeInsets.only(
                       top: 4.0, left: 14.0, right: 80, bottom: 5.0),
                   child: Container(
@@ -312,7 +320,6 @@ class _CouponsofferState extends State<Couponsoffer> {
                       color: Colors.yellow[100],
                       border: Border.all(color: Colors.grey),
                     ),
-                  
                     child: Row(
                       children: <Widget>[
                         Padding(
@@ -335,13 +342,16 @@ class _CouponsofferState extends State<Couponsoffer> {
                       ],
                     ),
                   ),
-            ),
-            Text(
-                  'APPLY',
-                  style: TextStyle(fontSize: 17.0, color: Colors.green[800], fontWeight: FontWeight.bold),
                 ),
-               ],
-             ),
+                Text(
+                  'APPLY',
+                  style: TextStyle(
+                      fontSize: 17.0,
+                      color: Colors.green[800],
+                      fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
             Padding(
               padding: const EdgeInsets.only(
                   top: 6.0, left: 13.0, right: 0, bottom: 10.0),
@@ -380,7 +390,8 @@ class _CouponsofferState extends State<Couponsoffer> {
               ),
             ),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -402,7 +413,8 @@ class _CouponsofferState extends State<Couponsoffer> {
                 )),
             SizedBox(height: 8.0),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -424,7 +436,8 @@ class _CouponsofferState extends State<Couponsoffer> {
                 )),
             SizedBox(height: 8.0),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -446,7 +459,8 @@ class _CouponsofferState extends State<Couponsoffer> {
                 )),
             SizedBox(height: 8.0),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -458,19 +472,20 @@ class _CouponsofferState extends State<Couponsoffer> {
                     ),
                     SizedBox(width: 8.0),
                     Expanded(
-                    child:Text(
-                      'Offer valid only on HDFC bank PayZapp period card',
-                      style: TextStyle(
-                        fontSize: 16.0,
-                        color: Colors.grey,
+                      child: Text(
+                        'Offer valid only on HDFC bank PayZapp period card',
+                        style: TextStyle(
+                          fontSize: 16.0,
+                          color: Colors.grey,
+                        ),
                       ),
-                    ),
                     ),
                   ],
                 )),
             SizedBox(height: 8.0),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -492,10 +507,11 @@ class _CouponsofferState extends State<Couponsoffer> {
                 )),
             SizedBox(height: 8.0),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
-                    Container(                    
+                    Container(
                       child: Icon(
                         Icons.brightness_1,
                         size: 10.0,
@@ -515,16 +531,15 @@ class _CouponsofferState extends State<Couponsoffer> {
             SizedBox(height: 10.0),
             Container(
               decoration: BoxDecoration(
-                  border: Border(
-                    bottom: BorderSide(color: Colors.grey[300]),
-                  ),
+                border: Border(
+                  bottom: BorderSide(color: Colors.grey[300]),
                 ),
+              ),
             ),
-             SizedBox(height: 28.0),
-
-             Row(
-               children: <Widget>[
-                 Padding(
+            SizedBox(height: 28.0),
+            Row(
+              children: <Widget>[
+                Padding(
                   padding: const EdgeInsets.only(
                       top: 4.0, left: 14.0, right: 110, bottom: 5.0),
                   child: Container(
@@ -555,13 +570,16 @@ class _CouponsofferState extends State<Couponsoffer> {
                       ],
                     ),
                   ),
-            ),
-            Text(
-                  'APPLY',
-                  style: TextStyle(fontSize: 17.0, color: Colors.green[800], fontWeight: FontWeight.bold),
                 ),
-               ],
-             ),
+                Text(
+                  'APPLY',
+                  style: TextStyle(
+                      fontSize: 17.0,
+                      color: Colors.green[800],
+                      fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
             Padding(
               padding: const EdgeInsets.only(
                   top: 6.0, left: 13.0, right: 0, bottom: 10.0),
@@ -600,7 +618,8 @@ class _CouponsofferState extends State<Couponsoffer> {
               ),
             ),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -611,20 +630,21 @@ class _CouponsofferState extends State<Couponsoffer> {
                       ),
                     ),
                     SizedBox(width: 8.0),
-                     Expanded(
-                     child:Text(
-                      'Offer Valid 1st ever transaction using FreeCharge',
-                      style: TextStyle(
-                        fontSize: 16.0,
-                        color: Colors.grey,
+                    Expanded(
+                      child: Text(
+                        'Offer Valid 1st ever transaction using FreeCharge',
+                        style: TextStyle(
+                          fontSize: 16.0,
+                          color: Colors.grey,
+                        ),
                       ),
                     ),
-                     ),
                   ],
                 )),
             SizedBox(height: 8.0),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -646,7 +666,8 @@ class _CouponsofferState extends State<Couponsoffer> {
                 )),
             SizedBox(height: 8.0),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -668,7 +689,8 @@ class _CouponsofferState extends State<Couponsoffer> {
                 )),
             SizedBox(height: 8.0),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -680,19 +702,20 @@ class _CouponsofferState extends State<Couponsoffer> {
                     ),
                     SizedBox(width: 8.0),
                     Expanded(
-                    child:Text(
-                      'Cashback Will br Credited into your Freecharge account within 72 hours',
-                      style: TextStyle(
-                        fontSize: 16.0,
-                        color: Colors.grey,
+                      child: Text(
+                        'Cashback Will br Credited into your Freecharge account within 72 hours',
+                        style: TextStyle(
+                          fontSize: 16.0,
+                          color: Colors.grey,
+                        ),
                       ),
-                    ),
                     ),
                   ],
                 )),
             SizedBox(height: 8.0),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -714,10 +737,11 @@ class _CouponsofferState extends State<Couponsoffer> {
                 )),
             SizedBox(height: 8.0),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
-                    Container(                    
+                    Container(
                       child: Icon(
                         Icons.brightness_1,
                         size: 10.0,
@@ -737,16 +761,15 @@ class _CouponsofferState extends State<Couponsoffer> {
             SizedBox(height: 10.0),
             Container(
               decoration: BoxDecoration(
-                  border: Border(
-                    bottom: BorderSide(color: Colors.grey[300]),
-                  ),
+                border: Border(
+                  bottom: BorderSide(color: Colors.grey[300]),
                 ),
+              ),
             ),
-             SizedBox(height: 28.0),
-
-             Row(
-               children: <Widget>[
-                 Padding(
+            SizedBox(height: 28.0),
+            Row(
+              children: <Widget>[
+                Padding(
                   padding: const EdgeInsets.only(
                       top: 4.0, left: 14.0, right: 110, bottom: 5.0),
                   child: Container(
@@ -777,13 +800,16 @@ class _CouponsofferState extends State<Couponsoffer> {
                       ],
                     ),
                   ),
-            ),
-             Text(
-                  'APPLY',
-                  style: TextStyle(fontSize: 17.0, color: Colors.green[800], fontWeight: FontWeight.bold),
                 ),
-               ],
-             ),
+                Text(
+                  'APPLY',
+                  style: TextStyle(
+                      fontSize: 17.0,
+                      color: Colors.green[800],
+                      fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
             Padding(
               padding: const EdgeInsets.only(
                   top: 6.0, left: 13.0, right: 0, bottom: 10.0),
@@ -822,7 +848,8 @@ class _CouponsofferState extends State<Couponsoffer> {
               ),
             ),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -844,7 +871,8 @@ class _CouponsofferState extends State<Couponsoffer> {
                 )),
             SizedBox(height: 8.0),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -866,7 +894,8 @@ class _CouponsofferState extends State<Couponsoffer> {
                 )),
             SizedBox(height: 8.0),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -888,7 +917,8 @@ class _CouponsofferState extends State<Couponsoffer> {
                 )),
             SizedBox(height: 8.0),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -900,19 +930,20 @@ class _CouponsofferState extends State<Couponsoffer> {
                     ),
                     SizedBox(width: 8.0),
                     Expanded(
-                    child:Text(
-                      'Offer valid once per user per month during the offer period',
-                      style: TextStyle(
-                        fontSize: 16.0,
-                        color: Colors.grey,
+                      child: Text(
+                        'Offer valid once per user per month during the offer period',
+                        style: TextStyle(
+                          fontSize: 16.0,
+                          color: Colors.grey,
+                        ),
                       ),
-                    ),
                     ),
                   ],
                 )),
             SizedBox(height: 8.0),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -934,10 +965,11 @@ class _CouponsofferState extends State<Couponsoffer> {
                 )),
             SizedBox(height: 8.0),
             Padding(
-                padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    top: 6.0, left: 13.0, right: 0, bottom: 10.0),
                 child: Row(
                   children: <Widget>[
-                    Container(                    
+                    Container(
                       child: Icon(
                         Icons.brightness_1,
                         size: 10.0,
@@ -957,12 +989,12 @@ class _CouponsofferState extends State<Couponsoffer> {
             SizedBox(height: 10.0),
             Container(
               decoration: BoxDecoration(
-                  border: Border(
-                    bottom: BorderSide(color: Colors.grey[300]),
-                  ),
+                border: Border(
+                  bottom: BorderSide(color: Colors.grey[300]),
                 ),
+              ),
             ),
-             SizedBox(height: 28.0),
+            SizedBox(height: 28.0),
           ],
         )),
       ),

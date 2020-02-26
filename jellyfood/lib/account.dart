@@ -15,14 +15,14 @@ class ProfilePage extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.white,
-          title: Text('MY ACCOUNT',
-            style: TextStyle(
-                        fontSize: 20.0,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black),
-          )
-        ),
+            backgroundColor: Colors.white,
+            title: Text(
+              'MY ACCOUNT',
+              style: TextStyle(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black),
+            )),
         body: Container(
             child: ListView(
           children: <Widget>[
@@ -116,104 +116,104 @@ class ProfilePage extends StatelessWidget {
             Padding(
               padding:
                   const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 18.0),
-                  child:InkWell(
-              child: Row(
-                children: <Widget>[
-                  Icon(
-                    Icons.home,
-                    color: Colors.black54,
-                    size: 26,
-                  ),
-                  SizedBox(
-                    width: 15.0,
-                  ),
-                  Text(
-                    "Manage Address",
-                    style: TextStyle(color: Colors.black, fontSize: 17.0),
-                  ),
-                  SizedBox(width: 140.0),
-                  Icon(
-                    Icons.keyboard_arrow_right,
-                    color: Colors.grey,
-                    size: 26,
-                  ),
-                  SizedBox(height: 14.0),
-                ],
-              ),
-               onTap: () {
-                Navigator.of(context).push(new MaterialPageRoute(
-                  builder: (BuildContext context) => new Manageaddress(),
-                ));
-              },
+              child: InkWell(
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.home,
+                      color: Colors.black54,
+                      size: 26,
+                    ),
+                    SizedBox(
+                      width: 15.0,
+                    ),
+                    Text(
+                      "Manage Address",
+                      style: TextStyle(color: Colors.black, fontSize: 17.0),
+                    ),
+                    SizedBox(width: 140.0),
+                    Icon(
+                      Icons.keyboard_arrow_right,
+                      color: Colors.grey,
+                      size: 26,
+                    ),
+                    SizedBox(height: 14.0),
+                  ],
+                ),
+                onTap: () {
+                  Navigator.of(context).push(new MaterialPageRoute(
+                    builder: (BuildContext context) => new Manageaddress(),
+                  ));
+                },
               ),
             ),
             Padding(
               padding:
                   const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 28.0),
-                  child:InkWell(
-              child: Row(
-                children: <Widget>[
-                  Icon(
-                    Icons.payment,
-                    color: Colors.black54,
-                    size: 26,
-                  ),
-                  SizedBox(
-                    width: 15.0,
-                  ),
-                  Text(
-                    "Payments",
-                    style: TextStyle(color: Colors.black, fontSize: 17.0),
-                  ),
-                  SizedBox(width: 195.0),
-                  Icon(
-                    Icons.keyboard_arrow_right,
-                    color: Colors.grey,
-                    size: 26,
-                  ),
-                  SizedBox(height: 14.0),
-                ],
+              child: InkWell(
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.payment,
+                      color: Colors.black54,
+                      size: 26,
+                    ),
+                    SizedBox(
+                      width: 15.0,
+                    ),
+                    Text(
+                      "Payments",
+                      style: TextStyle(color: Colors.black, fontSize: 17.0),
+                    ),
+                    SizedBox(width: 195.0),
+                    Icon(
+                      Icons.keyboard_arrow_right,
+                      color: Colors.grey,
+                      size: 26,
+                    ),
+                    SizedBox(height: 14.0),
+                  ],
+                ),
+                onTap: () {
+                  Navigator.of(context).push(new MaterialPageRoute(
+                    builder: (BuildContext context) => new Payment(),
+                  ));
+                },
               ),
-              onTap: () {
-                Navigator.of(context).push(new MaterialPageRoute(
-                  builder: (BuildContext context) => new Payment(),
-                ));
-              },
-                  ),
             ),
             Padding(
               padding:
                   const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 28.0),
-                  child:InkWell(
-              child: Row(
-                children: <Widget>[
-                  Icon(
-                    Icons.favorite_border,
-                    color: Colors.black54,
-                    size: 26,
-                  ),
-                  SizedBox(
-                    width: 15.0,
-                  ),
-                  Text(
-                    "Favourites",
-                    style: TextStyle(color: Colors.black, fontSize: 17.0),
-                  ),
-                  SizedBox(width: 190.0),
-                  Icon(
-                    Icons.keyboard_arrow_right,
-                    color: Colors.grey,
-                    size: 26,
-                  ),
-                  SizedBox(height: 14.0),
-                ],
+              child: InkWell(
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.favorite_border,
+                      color: Colors.black54,
+                      size: 26,
+                    ),
+                    SizedBox(
+                      width: 15.0,
+                    ),
+                    Text(
+                      "Favourites",
+                      style: TextStyle(color: Colors.black, fontSize: 17.0),
+                    ),
+                    SizedBox(width: 190.0),
+                    Icon(
+                      Icons.keyboard_arrow_right,
+                      color: Colors.grey,
+                      size: 26,
+                    ),
+                    SizedBox(height: 14.0),
+                  ],
+                ),
+                onTap: () {
+                  Navigator.of(context).push(new MaterialPageRoute(
+                    builder: (BuildContext context) => new Favourites(),
+                  ));
+                },
               ),
-              onTap: () {
-                Navigator.of(context).push(new MaterialPageRoute(
-                  builder: (BuildContext context) => new Favourites(),
-                ));
-              },
-                  ),
             ),
             // Padding(
             //   padding:
@@ -294,8 +294,8 @@ class ProfilePage extends StatelessWidget {
                   ),
                 )),
             Padding(
-                padding: EdgeInsets.only(top: 8.0, left: 8.0),
-                child:InkWell(
+              padding: EdgeInsets.only(top: 8.0, left: 8.0),
+              child: InkWell(
                 child: Row(
                   children: <Widget>[
                     Text(
@@ -311,12 +311,12 @@ class ProfilePage extends StatelessWidget {
                   ],
                 ),
                 onTap: () {
-                Navigator.of(context).push(new MaterialPageRoute(
-                  builder: (BuildContext context) => new Help(),
-                ));
-              },
-                ),
-                ),
+                  Navigator.of(context).push(new MaterialPageRoute(
+                    builder: (BuildContext context) => new Help(),
+                  ));
+                },
+              ),
+            ),
             Padding(
               padding: const EdgeInsets.only(left: 8.0),
               child: Text(
@@ -325,37 +325,37 @@ class ProfilePage extends StatelessWidget {
               ),
             ),
             FlatButton(
-            child:Padding(
-                padding: EdgeInsets.only(top: 28.0, left: 8.0),
-                child: Container(
-                  color: Colors.white,
-                  padding: EdgeInsets.all(20.0),
-                  child: Row(
-                    children: <Widget>[
-                      //backgroundColor: Colors.white,
-                      Text(
-                        'LOGOUT',
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 17.0),
-                      ),
-                      SizedBox(width: 188.0),
-                      Icon(
-                        Icons.settings_power,
-                        color: Colors.grey,
-                        size: 26,
-                      ),
-                    ],
-                  ),
-                )),
-                 onPressed: () {
-                      showDialog(
-                    context: context,
-                    builder: (_) => Logout(),
-                  );
-                    },
-             ),
+              child: Padding(
+                  padding: EdgeInsets.only(top: 28.0, left: 8.0),
+                  child: Container(
+                    color: Colors.white,
+                    padding: EdgeInsets.all(20.0),
+                    child: Row(
+                      children: <Widget>[
+                        //backgroundColor: Colors.white,
+                        Text(
+                          'LOGOUT',
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 17.0),
+                        ),
+                        SizedBox(width: 188.0),
+                        Icon(
+                          Icons.settings_power,
+                          color: Colors.grey,
+                          size: 26,
+                        ),
+                      ],
+                    ),
+                  )),
+              onPressed: () {
+                showDialog(
+                  context: context,
+                  builder: (_) => Logout(),
+                );
+              },
+            ),
           ],
         )),
       ),

@@ -57,18 +57,15 @@ class Faqs extends StatelessWidget {
                 ),
                 child: Padding(
                   padding: const EdgeInsets.only(top: 8.0, bottom: 20.0),
-                
                   child: Text(
                     "I entered the worng CVV. why did my transaction still go through?",
                     style: TextStyle(color: Colors.black, fontSize: 17.0),
                   ),
-                  
                 ),
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
+              padding: const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border(
@@ -85,8 +82,7 @@ class Faqs extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
+              padding: const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border(
@@ -103,8 +99,7 @@ class Faqs extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
+              padding: const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border(
@@ -121,8 +116,7 @@ class Faqs extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
+              padding: const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border(
@@ -139,8 +133,7 @@ class Faqs extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
+              padding: const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border(
@@ -157,8 +150,7 @@ class Faqs extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
+              padding: const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border(
@@ -175,8 +167,7 @@ class Faqs extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
+              padding: const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border(
@@ -193,8 +184,7 @@ class Faqs extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
+              padding: const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border(
@@ -211,8 +201,7 @@ class Faqs extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
+              padding: const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border(
@@ -229,8 +218,7 @@ class Faqs extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
+              padding: const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border(
@@ -247,8 +235,7 @@ class Faqs extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
+              padding: const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border(
@@ -265,8 +252,7 @@ class Faqs extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
+              padding: const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border(
@@ -283,8 +269,7 @@ class Faqs extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
+              padding: const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border(
@@ -301,8 +286,7 @@ class Faqs extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
+              padding: const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border(
@@ -319,8 +303,7 @@ class Faqs extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
+              padding: const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border(
@@ -337,8 +320,7 @@ class Faqs extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
+              padding: const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border(
@@ -355,8 +337,7 @@ class Faqs extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
+              padding: const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border(
@@ -373,8 +354,7 @@ class Faqs extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
+              padding: const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border(
@@ -391,8 +371,7 @@ class Faqs extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
+              padding: const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border(
@@ -408,7 +387,7 @@ class Faqs extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height:10),
+            SizedBox(height: 10),
           ],
         )),
       ),

@@ -6,7 +6,6 @@ import 'cart.dart';
 import 'home.dart';
 
 class MainScreen extends StatefulWidget {
-
   @override
   _MainScreenState createState() => _MainScreenState();
 }
@@ -55,25 +54,29 @@ class _MainScreenState extends State<MainScreen> {
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.home,color: Colors.black,
+              Icons.home,
+              color: Colors.black,
             ),
             title: Text("Home"),
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.search, color: Colors.black,
+              Icons.search,
+              color: Colors.black,
             ),
             title: Text("Explore"),
           ),
           BottomNavigationBarItem(
             icon: Icon(
-             Icons.card_travel, color: Colors.black,
+              Icons.card_travel,
+              color: Colors.black,
             ),
             title: Text("Cart"),
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.person, color: Colors.black,
+              Icons.person,
+              color: Colors.black,
             ),
             title: Text("Profile"),
           ),

@@ -31,32 +31,32 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-         appBar: AppBar(
-          backgroundColor: Colors.white,
-          title: Row(
-            children: <Widget>[
-              InkWell(
-                child: Icon(
-                  Icons.arrow_back,
-                  color: Colors.black,
-                  size: 24,
+          appBar: AppBar(
+            backgroundColor: Colors.white,
+            title: Row(
+              children: <Widget>[
+                InkWell(
+                  child: Icon(
+                    Icons.arrow_back,
+                    color: Colors.black,
+                    size: 24,
+                  ),
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
                 ),
-                onTap: () {
-                  Navigator.pop(context);
-                },
-              ),
-              SizedBox(width: 10.0),
-              Text(
-                'FAVOURITES',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontWeight: FontWeight.normal,
-                  fontSize: 19.0,
+                SizedBox(width: 10.0),
+                Text(
+                  'FAVOURITES',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.normal,
+                    fontSize: 19.0,
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
-        ),
           floatingActionButtonLocation:
               FloatingActionButtonLocation.centerDocked,
           // bottomNavigationBar: MyAppbar(),
@@ -91,10 +91,10 @@ class MenuItemsList extends StatelessWidget {
           MenuItem(),
           SizedBox(height: 15.0),
           MenuItem(),
-          SizedBox(height: 15.0), 
-          MenuItem(),          
+          SizedBox(height: 15.0),
+          MenuItem(),
         ],
-      ), 
+      ),
     );
   }
 }
@@ -182,4 +182,3 @@ class MenuItem extends StatelessWidget {
     );
   }
 }
-

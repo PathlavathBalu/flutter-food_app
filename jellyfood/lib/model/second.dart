@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'description.dart';
 import 'gallery.dart';
 import 'reviews.dart';
+
 class Second extends StatefulWidget {
   Second({Key key, this.title}) : super(key: key);
 
@@ -13,10 +14,8 @@ class Second extends StatefulWidget {
 }
 
 class _SecondState extends State<Second> {
-
   @override
   Widget build(BuildContext context) {
-
     double height = 300.0;
 
     return DefaultTabController(
@@ -38,7 +37,6 @@ class _SecondState extends State<Second> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-
                   Stack(
                     children: <Widget>[
                       Container(
@@ -60,7 +58,7 @@ class _SecondState extends State<Second> {
                         alignment: Alignment.bottomRight,
                         child: Padding(
                           padding:
-                          const EdgeInsets.only(right: 15.0, top: 170.0),
+                              const EdgeInsets.only(right: 15.0, top: 170.0),
                           child: CircleAvatar(
                             backgroundColor: Colors.red,
                             radius: 25.0,
@@ -74,7 +72,6 @@ class _SecondState extends State<Second> {
                       ),
                     ],
                   ),
-
                   Padding(
                     padding: const EdgeInsets.only(left: 20.0, top: 10.0),
                     child: Text(
@@ -85,7 +82,6 @@ class _SecondState extends State<Second> {
                           fontWeight: FontWeight.bold),
                     ),
                   ),
-
                   Padding(
                     padding: const EdgeInsets.only(left: 15.0, top: 10.0),
                     child: Row(
@@ -145,7 +141,6 @@ class _SecondState extends State<Second> {
               ),
             ),
           ),
-
           bottom: PreferredSize(
             preferredSize: Size.square(height),
             child: TabBar(
@@ -183,4 +178,3 @@ class _SecondState extends State<Second> {
     );
   }
 }
-

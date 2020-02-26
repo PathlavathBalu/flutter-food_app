@@ -24,7 +24,6 @@ var burgerImage =
 var chickenImage =
     'https://images.unsplash.com/photo-1532550907401-a500c9a57435?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80';
 
-
 // COLORS
 var textYellow = Color(0xFFf6c24d);
 var iconYellow = Color(0xFFf4bf47);
@@ -54,39 +53,39 @@ class MyApp extends StatelessWidget {
                   Container(
                     height: 20.0,
                     width: 90.0,
-                    child:InkWell(
-                    child: Text(
-                      'Kondapur',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 20.0,
-                        fontWeight: FontWeight.bold,
+                    child: InkWell(
+                      child: Text(
+                        'Kondapur',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
-                    ),
-                    onTap: () {
-                    Navigator.of(context).push(new MaterialPageRoute(
-                      builder: (BuildContext context) => new Setlocation(),
-                    ));
-                  },
+                      onTap: () {
+                        Navigator.of(context).push(new MaterialPageRoute(
+                          builder: (BuildContext context) => new Setlocation(),
+                        ));
+                      },
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top:8.0, right: 90.0),
-                    child:InkWell(
-                    child: Icon(
-                          Icons.keyboard_arrow_down,
-                          color: Colors.black,
-                          size: 26.0,
-                        ),
-                        onTap: () {
-                    Navigator.of(context).push(new MaterialPageRoute(
-                      builder: (BuildContext context) => new Setlocation(),
-                    ));
-                  },
+                    padding: const EdgeInsets.only(top: 8.0, right: 90.0),
+                    child: InkWell(
+                      child: Icon(
+                        Icons.keyboard_arrow_down,
+                        color: Colors.black,
+                        size: 26.0,
+                      ),
+                      onTap: () {
+                        Navigator.of(context).push(new MaterialPageRoute(
+                          builder: (BuildContext context) => new Setlocation(),
+                        ));
+                      },
                     ),
                   ),
                 ],
-              ),              
+              ),
               Container(
                 child: InkWell(
                   child: Image.asset('images/offer1.png'),
@@ -282,7 +281,7 @@ class MenuItem1 extends StatelessWidget {
             width: 100.0,
             child: InkWell(
               child: Image.network(
-               chickenImage,
+                chickenImage,
                 fit: BoxFit.cover,
               ),
               onTap: () {
@@ -366,7 +365,7 @@ class MenuItem2 extends StatelessWidget {
             width: 100.0,
             child: InkWell(
               child: Image.network(
-               foodImage,
+                foodImage,
                 fit: BoxFit.cover,
               ),
               onTap: () {
@@ -520,4 +519,3 @@ class ItemCard extends StatelessWidget {
     );
   }
 }
-

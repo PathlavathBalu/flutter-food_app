@@ -250,7 +250,7 @@ class _DinnerState extends State<Dinner> {
                       child: Padding(
                         padding: const EdgeInsets.only(
                             left: 20.0, right: 20.0, top: 5.0, bottom: 5.0),
-                        child: Center(                        
+                        child: Center(
                           child: Text(
                             "Dinner",
                             style: TextStyle(

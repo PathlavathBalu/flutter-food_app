@@ -30,17 +30,16 @@ class _ReviewsState extends State<Reviews> {
       body: Container(
         child: Column(
           children: <Widget>[
-             Padding(
-                padding: const EdgeInsets.only(
-                    left: 15, right: 15.0, top: 50.0, bottom: 15.0),
-                child: Text(
-                  "Breakfast becomes an occcasion when you eat waffles. No need to add fruit, syrup or powdered sugar",
-                  style: TextStyle(
-                    fontSize: 16.0,
-                  ),
+            Padding(
+              padding: const EdgeInsets.only(
+                  left: 15, right: 15.0, top: 50.0, bottom: 15.0),
+              child: Text(
+                "Breakfast becomes an occcasion when you eat waffles. No need to add fruit, syrup or powdered sugar",
+                style: TextStyle(
+                  fontSize: 16.0,
                 ),
               ),
-                        
+            ),
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.only(
@@ -53,11 +52,10 @@ class _ReviewsState extends State<Reviews> {
                 ),
               ),
             ),
-            
             SizedBox(
               height: 10.0,
             ),
-           Expanded(
+            Expanded(
               child: Padding(
                 padding: const EdgeInsets.only(left: 15.0),
                 child: Row(
@@ -79,8 +77,7 @@ class _ReviewsState extends State<Reviews> {
                   ],
                 ),
               ),
-              ),
-            
+            ),
             SizedBox(
               height: 10.0,
             ),
@@ -88,7 +85,7 @@ class _ReviewsState extends State<Reviews> {
             SizedBox(
               height: 10.0,
             ),
-           Expanded(
+            Expanded(
               child: Padding(
                 padding: const EdgeInsets.only(left: 15.0, right: 15.0),
                 child: Row(
@@ -145,7 +142,7 @@ class _ReviewsState extends State<Reviews> {
                   ],
                 ),
               ),
-              ),
+            ),
           ],
         ),
       ),

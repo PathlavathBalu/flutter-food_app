@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "568543641584-pse4clvug4p46rq8lvq1u4ucpjol0rd8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jellyfood",
+            "certificate_hash": "6b458a32f342d5973d526c122fc9930a332ebc30"
+          }
+        },
+        {
           "client_id": "568543641584-3db9vgdsc98qbanblrvplfg01jhrkpba.apps.googleusercontent.com",
           "client_type": 3
         }

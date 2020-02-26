@@ -24,14 +24,12 @@ class Description extends StatefulWidget {
 }
 
 class _DescriptionState extends State<Description> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
         child: Text("Description"),
       ),
-
     );
   }
 }

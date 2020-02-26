@@ -480,16 +480,6 @@
 //   }
 // }
 
-
-
-
-
-
-
-
-
-
-
 // import 'package:flutter/material.dart';
 
 // import 'detail.dart';
@@ -623,115 +613,115 @@
 //   @override
 //   Widget build(BuildContext context) {
 //     return Scaffold(
-      // appBar: AppBar(
-      //   elevation: 2.0,
-      //   backgroundColor: Colors.white,
-      //   actions: <Widget>[
-      //     Column(
-      //       children: <Widget>[
-      //         SizedBox(height: 5.0),
-      //         Container(
-      //           height: 20.0,
-      //           width: 50.0,
-      //           child: Text(
-      //             'Now',
-      //             style: TextStyle(
-      //               color: Colors.black,
-      //               fontSize: 20.0,
-      //               fontWeight: FontWeight.bold,
-      //             ),
-      //           ),
-      //         ),
-      //         Text(
-      //           '.......',
-      //           style: TextStyle(
-      //             color: Colors.black,
-      //             fontSize: 15.0,
-      //           ),
-      //         )
-      //       ],
-      //     ),
+// appBar: AppBar(
+//   elevation: 2.0,
+//   backgroundColor: Colors.white,
+//   actions: <Widget>[
+//     Column(
+//       children: <Widget>[
+//         SizedBox(height: 5.0),
+//         Container(
+//           height: 20.0,
+//           width: 50.0,
+//           child: Text(
+//             'Now',
+//             style: TextStyle(
+//               color: Colors.black,
+//               fontSize: 20.0,
+//               fontWeight: FontWeight.bold,
+//             ),
+//           ),
+//         ),
+//         Text(
+//           '.......',
+//           style: TextStyle(
+//             color: Colors.black,
+//             fontSize: 15.0,
+//           ),
+//         )
+//       ],
+//     ),
 
-      //     Padding(
-      //       padding: EdgeInsets.only(bottom: 15.0),
-      //       child: Icon(Icons.arrow_forward, color: Colors.black, size: 12.0),
-      //     ),
-      //     // SizedBox(width: 30.0),
-      //     Column(
-      //       children: <Widget>[
-      //         SizedBox(
-      //           height: 10.0,
-      //         ),
-      //         Container(
-      //           height: 20.0,
-      //           width: 120.0,
-      //           child: TextField(
-      //             decoration: InputDecoration(
-      //                 border: OutlineInputBorder(borderSide: BorderSide.none)),
-      //           ),
-      //         ),
-      //         SizedBox(height: 5.0),
-      //         Text(
-      //           '......................',
-      //           style: TextStyle(
-      //             color: Colors.black,
-      //             fontSize: 15.0,
-      //           ),
-      //         )
-      //       ],
-      //     ),
-      //     Container(
-      //       child:InkWell(
-      //       child: Image.asset('images/offer1.png'),
-      //       onTap: () {
-      //                       Navigator.of(context).push(new MaterialPageRoute(
-      //                         builder: (BuildContext context) =>
-      //                             new Restoffers(),
-      //                       ));
-      //                     },
-      //       ),
-      //     ),
-      //     Container(
-      //       padding: EdgeInsets.fromLTRB(0.0, 15.0, 3.0, 0.0),
-      //       child:InkWell(
-      //       child: Text(
-      //         'Offers',
-      //         style: TextStyle(
-      //             color: Colors.black,
-      //             fontSize: 20.0,
-      //             fontWeight: FontWeight.bold),
-      //       ),
-      //        onTap: () {
-      //                       Navigator.of(context).push(new MaterialPageRoute(
-      //                         builder: (BuildContext context) =>
-      //                             new Restoffers(),
-      //                       ));
-      //                     },
-      //       ),
-      //     ),
-      //     Container(
-      //       padding: EdgeInsets.fromLTRB(0.0, 18.0, 0.0, 18.0),
-      //       height: 10.0,
-      //       width: 30.0,
-      //       child: Material(
-      //         color: Colors.orange,
-      //         shape: OutlineInputBorder(
-      //             borderSide: BorderSide(width: 1.0, color: Colors.orange),
-      //             borderRadius: BorderRadius.circular(1)),
-      //         child: Center(
-      //           child: Text(
-      //             'New',
-      //             style: TextStyle(
-      //                 fontSize: 10.0,
-      //                 fontWeight: FontWeight.bold,
-      //                 color: Colors.white),
-      //           ),
-      //         ),
-      //       ),
-      //     ),
-      //     SizedBox(width: 10.0),
-      //   ],
-      // ),
+//     Padding(
+//       padding: EdgeInsets.only(bottom: 15.0),
+//       child: Icon(Icons.arrow_forward, color: Colors.black, size: 12.0),
+//     ),
+//     // SizedBox(width: 30.0),
+//     Column(
+//       children: <Widget>[
+//         SizedBox(
+//           height: 10.0,
+//         ),
+//         Container(
+//           height: 20.0,
+//           width: 120.0,
+//           child: TextField(
+//             decoration: InputDecoration(
+//                 border: OutlineInputBorder(borderSide: BorderSide.none)),
+//           ),
+//         ),
+//         SizedBox(height: 5.0),
+//         Text(
+//           '......................',
+//           style: TextStyle(
+//             color: Colors.black,
+//             fontSize: 15.0,
+//           ),
+//         )
+//       ],
+//     ),
+//     Container(
+//       child:InkWell(
+//       child: Image.asset('images/offer1.png'),
+//       onTap: () {
+//                       Navigator.of(context).push(new MaterialPageRoute(
+//                         builder: (BuildContext context) =>
+//                             new Restoffers(),
+//                       ));
+//                     },
+//       ),
+//     ),
+//     Container(
+//       padding: EdgeInsets.fromLTRB(0.0, 15.0, 3.0, 0.0),
+//       child:InkWell(
+//       child: Text(
+//         'Offers',
+//         style: TextStyle(
+//             color: Colors.black,
+//             fontSize: 20.0,
+//             fontWeight: FontWeight.bold),
+//       ),
+//        onTap: () {
+//                       Navigator.of(context).push(new MaterialPageRoute(
+//                         builder: (BuildContext context) =>
+//                             new Restoffers(),
+//                       ));
+//                     },
+//       ),
+//     ),
+//     Container(
+//       padding: EdgeInsets.fromLTRB(0.0, 18.0, 0.0, 18.0),
+//       height: 10.0,
+//       width: 30.0,
+//       child: Material(
+//         color: Colors.orange,
+//         shape: OutlineInputBorder(
+//             borderSide: BorderSide(width: 1.0, color: Colors.orange),
+//             borderRadius: BorderRadius.circular(1)),
+//         child: Center(
+//           child: Text(
+//             'New',
+//             style: TextStyle(
+//                 fontSize: 10.0,
+//                 fontWeight: FontWeight.bold,
+//                 color: Colors.white),
+//           ),
+//         ),
+//       ),
+//     ),
+//     SizedBox(width: 10.0),
+//   ],
+// ),
 //       backgroundColor: Colors.white,
 //       body: ListView(
 //         shrinkWrap: true,

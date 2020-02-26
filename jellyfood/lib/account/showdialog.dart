@@ -45,58 +45,60 @@ class LogoutOverlayState extends State<LogoutOverlay>
                       borderRadius: BorderRadius.circular(15.0))),
               child: Column(
                 children: <Widget>[
-                   Padding(
+                  Padding(
                     padding: const EdgeInsets.only(
                         top: 30.0, left: 0.0, right: 70.0),
                     child: Text(
                       "Delete Address",
                       style: TextStyle(color: Colors.black, fontSize: 19.0),
-                    ),                    
+                    ),
                   ),
-                   Padding(
-                     padding: const EdgeInsets.only(top: 10.0, left: 40.0, right: 0.0),
-                     child: Text(
-                        "Are you Sure you want to delete this address?",
-                        style: TextStyle(color: Colors.grey, fontSize: 17.0),
-                      ),
-                   ),
+                  Padding(
+                    padding: const EdgeInsets.only(
+                        top: 10.0, left: 40.0, right: 0.0),
+                    child: Text(
+                      "Are you Sure you want to delete this address?",
+                      style: TextStyle(color: Colors.grey, fontSize: 17.0),
+                    ),
+                  ),
                   Expanded(
                       child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: <Widget>[
                       Padding(
                         padding: const EdgeInsets.all(10.0),
-                        child:InkWell(
-                        child: Text(
-                          'NO',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              color: Colors.green[700],
-                              fontWeight: FontWeight.bold,
-                              fontSize: 17.0),
-                        ),
-                        onTap: () {
-                              Navigator.pop(context);
-                            },
+                        child: InkWell(
+                          child: Text(
+                            'NO',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.green[700],
+                                fontWeight: FontWeight.bold,
+                                fontSize: 17.0),
                           ),
+                          onTap: () {
+                            Navigator.pop(context);
+                          },
+                        ),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(
                             left: 20.0, right: 10.0, top: 10.0, bottom: 10.0),
-                        child:InkWell(    
-                        child: Text(
-                          'YES',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              color: Colors.green[700],
-                              fontWeight: FontWeight.bold,
-                              fontSize: 17.0),
-                        ),
-                        onTap: () {
-                Navigator.of(context).push(new MaterialPageRoute(
-                  builder: (BuildContext context) => new Manageaddress1(),
-                ));
-              },
+                        child: InkWell(
+                          child: Text(
+                            'YES',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.green[700],
+                                fontWeight: FontWeight.bold,
+                                fontSize: 17.0),
+                          ),
+                          onTap: () {
+                            Navigator.of(context).push(new MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  new Manageaddress1(),
+                            ));
+                          },
                         ),
                       ),
                     ],

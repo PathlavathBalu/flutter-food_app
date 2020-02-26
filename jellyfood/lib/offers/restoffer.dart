@@ -10,56 +10,58 @@ class Restoffers extends StatefulWidget {
 class _RestoffersState extends State<Restoffers> {
   @override
   Widget build(BuildContext context) {
-     return MaterialApp(
-       debugShowCheckedModeBanner: false,
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: DefaultTabController(
         length: 2,
         child: Scaffold(
           appBar: AppBar(
-            backgroundColor: Colors.white,        
+            backgroundColor: Colors.white,
             bottom: TabBar(
               tabs: [
                 Tab(
-                  child:Text(
+                    child: Text(
                   'RESTAURANT OFFERS',
                   style: TextStyle(
                     color: Colors.grey,
                     fontSize: 16.0,
-                   // fontWeight: FontWeight.bold,
+                    // fontWeight: FontWeight.bold,
                   ),
-                )
-                ),
-                 Tab(
-                  child:Text(
+                )),
+                Tab(
+                    child: Text(
                   'PAYMENT OFFERS/COUPONS',
                   style: TextStyle(
                     color: Colors.grey,
                     fontSize: 16.0,
                     //fontWeight: FontWeight.bold,
                   ),
-                )
-                ),
+                )),
               ],
             ),
-            title:   Row(
+            title: Row(
               children: <Widget>[
                 InkWell(
-                child:Icon(Icons.keyboard_arrow_left, color: Colors.black, size: 24,),
-                 onTap: () {
-                      Navigator.pop(context);
-                    },
+                  child: Icon(
+                    Icons.keyboard_arrow_left,
+                    color: Colors.black,
+                    size: 24,
+                  ),
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
                 ),
                 SizedBox(width: 10.0),
-                Text('Offers',
-               style: TextStyle(
+                Text(
+                  'Offers',
+                  style: TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.bold,
                     fontSize: 20.0,
                   ),
-            ),
+                ),
               ],
             ),
-            
           ),
           body: TabBarView(
             children: [

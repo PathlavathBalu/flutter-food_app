@@ -117,43 +117,40 @@ class _SavedState extends State<Saved> {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(top:8.0, bottom: 18.0, left: 70.0),
+          padding: const EdgeInsets.only(top: 8.0, bottom: 18.0, left: 70.0),
           child: Row(
             children: <Widget>[
               Image.asset(
-              'images/visa.png',
-              height: 50,
-              width: 50,
+                'images/visa.png',
+                height: 50,
+                width: 50,
                 fit: BoxFit.cover,
               ),
-              SizedBox(width:10),
-               Image.asset(
-              'images/master.png',
-              height: 50,
-              width: 50,
+              SizedBox(width: 10),
+              Image.asset(
+                'images/master.png',
+                height: 50,
+                width: 50,
                 fit: BoxFit.cover,
               ),
-              SizedBox(width:10),
-
-               Image.asset(
-              'images/american.png',
-              height: 50,
-              width: 50,
+              SizedBox(width: 10),
+              Image.asset(
+                'images/american.png',
+                height: 50,
+                width: 50,
                 fit: BoxFit.cover,
               ),
-              SizedBox(width:10),
-
-               Image.asset(
-              'images/Rupay1.png',
-              height: 40,
-              width: 40,
+              SizedBox(width: 10),
+              Image.asset(
+                'images/Rupay1.png',
+                height: 40,
+                width: 40,
                 fit: BoxFit.cover,
               ),
-              SizedBox(width:10),
+              SizedBox(width: 10),
             ],
           ),
         ),
-        
         Container(
           width: 360,
           color: Colors.grey[100],
@@ -167,217 +164,219 @@ class _SavedState extends State<Saved> {
         ),
         SizedBox(height: 10),
         FlatButton(
-        child:Container(
-          decoration: BoxDecoration(
-            border: Border(
-              bottom: BorderSide(color: Colors.grey[300]),
+          child: Container(
+            decoration: BoxDecoration(
+              border: Border(
+                bottom: BorderSide(color: Colors.grey[300]),
+              ),
             ),
-          ),
-          child: Padding(
-            padding: const EdgeInsets.only(top: 15.0,  bottom: 15.0),
-            child: Row(
-              children: <Widget>[
-                Image.asset(
-                            'images/freecharge1.png',
-                            height: 30,
-                            width: 30,
-                            fit: BoxFit.fill,
-                          ),
-                SizedBox(width: 20),
-                Text(
-                  'FreeCharge',
-                  style: TextStyle(fontSize: 18.0, color: Colors.black87),
-                ),
-                SizedBox(width: 72),
-                Text(
-                  'LINK ACCOUNT',
-                  style: TextStyle(
-                      fontSize: 16.0,
-                      color: Colors.green[900],
-                      fontWeight: FontWeight.w700),
-                ),
-              ],
-            ),
-          ),
-        ),
-         onPressed: () {
-                    showDialog(
-        context: context,
-        builder: (_) => Paymentdialog(),
-      );
-        },
-        ),
-        SizedBox(height: 15),
-        FlatButton(
-        child:Container(
-          decoration: BoxDecoration(
-            border: Border(
-              bottom: BorderSide(color: Colors.grey[300]),
-            ),
-          ),
-          child: Padding(
-            padding: const EdgeInsets.only(top: 15.0, left: 0.0, bottom: 15.0),
-            child: Row(
-              children: <Widget>[
+            child: Padding(
+              padding: const EdgeInsets.only(top: 15.0, bottom: 15.0),
+              child: Row(
+                children: <Widget>[
                   Image.asset(
-                            'images/mobikwik.png',
-                            height: 30,
-                            width: 30,
-                            fit: BoxFit.fill,
-                          ),
-                SizedBox(width: 20),
-                Text(
-                  'Mobikwik',
-                  style: TextStyle(fontSize: 18.0, color: Colors.black87),
-                ),
-                SizedBox(width: 84),
-                Text(
-                  'LINK ACCOUNT',
-                  style: TextStyle(
-                      fontSize: 16.0,
-                      color: Colors.green[900],
-                      fontWeight: FontWeight.w700),
-                ),
-              ],
+                    'images/freecharge1.png',
+                    height: 30,
+                    width: 30,
+                    fit: BoxFit.fill,
+                  ),
+                  SizedBox(width: 20),
+                  Text(
+                    'FreeCharge',
+                    style: TextStyle(fontSize: 18.0, color: Colors.black87),
+                  ),
+                  SizedBox(width: 72),
+                  Text(
+                    'LINK ACCOUNT',
+                    style: TextStyle(
+                        fontSize: 16.0,
+                        color: Colors.green[900],
+                        fontWeight: FontWeight.w700),
+                  ),
+                ],
+              ),
             ),
           ),
-        ),
-        onPressed: () {
-                    showDialog(
-        context: context,
-        builder: (_) => Mobikwikdialog(),
-      );
-        },
+          onPressed: () {
+            showDialog(
+              context: context,
+              builder: (_) => Paymentdialog(),
+            );
+          },
         ),
         SizedBox(height: 15),
         FlatButton(
-        child:Container(
-          decoration: BoxDecoration(
-            border: Border(
-              bottom: BorderSide(color: Colors.grey[300]),
+          child: Container(
+            decoration: BoxDecoration(
+              border: Border(
+                bottom: BorderSide(color: Colors.grey[300]),
+              ),
+            ),
+            child: Padding(
+              padding:
+                  const EdgeInsets.only(top: 15.0, left: 0.0, bottom: 15.0),
+              child: Row(
+                children: <Widget>[
+                  Image.asset(
+                    'images/mobikwik.png',
+                    height: 30,
+                    width: 30,
+                    fit: BoxFit.fill,
+                  ),
+                  SizedBox(width: 20),
+                  Text(
+                    'Mobikwik',
+                    style: TextStyle(fontSize: 18.0, color: Colors.black87),
+                  ),
+                  SizedBox(width: 84),
+                  Text(
+                    'LINK ACCOUNT',
+                    style: TextStyle(
+                        fontSize: 16.0,
+                        color: Colors.green[900],
+                        fontWeight: FontWeight.w700),
+                  ),
+                ],
+              ),
             ),
           ),
-          child: Padding(
-            padding: const EdgeInsets.only(top: 10.0, left: 0.0, bottom: 10.0),
-            child: Row(
-              children: <Widget>[
-                Image.asset(
-                            'images/paytm.png',
-                            height: 40,
-                            width: 50,
-                            fit: BoxFit.fill,
-                          ),
-                SizedBox(width: 20),
-                Text(
-                  'Paytm',
-                  style: TextStyle(fontSize: 18.0, color: Colors.black87),
-                ),
-                SizedBox(width: 88),
-                Text(
-                  'LINK ACCOUNT',
-                  style: TextStyle(
-                      fontSize: 16.0,
-                      color: Colors.green[900],
-                      fontWeight: FontWeight.w700),
-                ),
-              ],
-            ),
-          ),
-        ),
-        onPressed: () {
-                    showDialog(
-        context: context,
-        builder: (_) => Paytmdialog(),
-      );
-        },
-        ),
-        SizedBox(height: 15),
-        FlatButton(
-        child:Container(
-          decoration: BoxDecoration(
-            border: Border(
-              bottom: BorderSide(color: Colors.grey[300]),
-            ),
-          ),
-          child: Padding(
-            padding: const EdgeInsets.only(top: 15.0, left: 0.0, bottom: 15.0),
-            child: Row(
-              children: <Widget>[
-                Image.asset(
-                            'images/phonepe.png',
-                            height: 30,
-                            width: 30,
-                            fit: BoxFit.fill,
-                          ),
-                SizedBox(width: 20),
-                Text(
-                  'Phonepe',
-                  style: TextStyle(fontSize: 18.0, color: Colors.black87),
-                ),
-                SizedBox(width: 90),
-                Text(
-                  'LINK ACCOUNT',
-                  style: TextStyle(
-                      fontSize: 16.0,
-                      color: Colors.green[900],
-                      fontWeight: FontWeight.w700),
-                ),
-              ],
-            ),
-          ),
-        ),
-        onPressed: () {
-                    showDialog(
-        context: context,
-        builder: (_) => Phonepaydialog(),
-      );
-        },
+          onPressed: () {
+            showDialog(
+              context: context,
+              builder: (_) => Mobikwikdialog(),
+            );
+          },
         ),
         SizedBox(height: 15),
         FlatButton(
-        child:Container(
-          decoration: BoxDecoration(
-            border: Border(
-              bottom: BorderSide(color: Colors.grey[300]),
+          child: Container(
+            decoration: BoxDecoration(
+              border: Border(
+                bottom: BorderSide(color: Colors.grey[300]),
+              ),
+            ),
+            child: Padding(
+              padding:
+                  const EdgeInsets.only(top: 10.0, left: 0.0, bottom: 10.0),
+              child: Row(
+                children: <Widget>[
+                  Image.asset(
+                    'images/paytm.png',
+                    height: 40,
+                    width: 50,
+                    fit: BoxFit.fill,
+                  ),
+                  SizedBox(width: 20),
+                  Text(
+                    'Paytm',
+                    style: TextStyle(fontSize: 18.0, color: Colors.black87),
+                  ),
+                  SizedBox(width: 88),
+                  Text(
+                    'LINK ACCOUNT',
+                    style: TextStyle(
+                        fontSize: 16.0,
+                        color: Colors.green[900],
+                        fontWeight: FontWeight.w700),
+                  ),
+                ],
+              ),
             ),
           ),
-          child: Padding(
-            padding: const EdgeInsets.only(top: 15.0, left: 0.0, bottom: 15.0),
-            child: Row(
-              children: <Widget>[
-                Image.asset(
-                            'images/amazon.png',
-                            height: 30,
-                            width: 40,
-                            fit: BoxFit.fill,
-                          ),
-                SizedBox(width: 20),
-                Text(
-                  'Amazon Pay',
-                  style: TextStyle(fontSize: 18.0, color: Colors.black87),
-                ),
-                SizedBox(width: 50),
-                Text(
-                  'LINK ACCOUNT',
-                  style: TextStyle(
-                      fontSize: 16.0,
-                      color: Colors.green[900],
-                      fontWeight: FontWeight.w700),
-                ),
-              ],
-            ),
-          ),
+          onPressed: () {
+            showDialog(
+              context: context,
+              builder: (_) => Paytmdialog(),
+            );
+          },
         ),
-        onPressed: () {
-                    showDialog(
-        context: context,
-        builder: (_) => AmazonpayDialog(),
-      );
-        },
-        ),
-
         SizedBox(height: 15),
-
+        FlatButton(
+          child: Container(
+            decoration: BoxDecoration(
+              border: Border(
+                bottom: BorderSide(color: Colors.grey[300]),
+              ),
+            ),
+            child: Padding(
+              padding:
+                  const EdgeInsets.only(top: 15.0, left: 0.0, bottom: 15.0),
+              child: Row(
+                children: <Widget>[
+                  Image.asset(
+                    'images/phonepe.png',
+                    height: 30,
+                    width: 30,
+                    fit: BoxFit.fill,
+                  ),
+                  SizedBox(width: 20),
+                  Text(
+                    'Phonepe',
+                    style: TextStyle(fontSize: 18.0, color: Colors.black87),
+                  ),
+                  SizedBox(width: 90),
+                  Text(
+                    'LINK ACCOUNT',
+                    style: TextStyle(
+                        fontSize: 16.0,
+                        color: Colors.green[900],
+                        fontWeight: FontWeight.w700),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          onPressed: () {
+            showDialog(
+              context: context,
+              builder: (_) => Phonepaydialog(),
+            );
+          },
+        ),
+        SizedBox(height: 15),
+        FlatButton(
+          child: Container(
+            decoration: BoxDecoration(
+              border: Border(
+                bottom: BorderSide(color: Colors.grey[300]),
+              ),
+            ),
+            child: Padding(
+              padding:
+                  const EdgeInsets.only(top: 15.0, left: 0.0, bottom: 15.0),
+              child: Row(
+                children: <Widget>[
+                  Image.asset(
+                    'images/amazon.png',
+                    height: 30,
+                    width: 40,
+                    fit: BoxFit.fill,
+                  ),
+                  SizedBox(width: 20),
+                  Text(
+                    'Amazon Pay',
+                    style: TextStyle(fontSize: 18.0, color: Colors.black87),
+                  ),
+                  SizedBox(width: 50),
+                  Text(
+                    'LINK ACCOUNT',
+                    style: TextStyle(
+                        fontSize: 16.0,
+                        color: Colors.green[900],
+                        fontWeight: FontWeight.w700),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          onPressed: () {
+            showDialog(
+              context: context,
+              builder: (_) => AmazonpayDialog(),
+            );
+          },
+        ),
+        SizedBox(height: 15),
         Container(
           width: 360,
           color: Colors.grey[100],
@@ -390,85 +389,92 @@ class _SavedState extends State<Saved> {
           ),
         ),
         SizedBox(height: 20),
-         Padding(
-          padding: const EdgeInsets.only(top:8.0, bottom: 18.0, left: 10.0),
+        Padding(
+          padding: const EdgeInsets.only(top: 8.0, bottom: 18.0, left: 10.0),
           child: Row(
             children: <Widget>[
               Column(
                 children: <Widget>[
                   Image.asset(
-                  'images/hdfc1.png',
-                  height: 40,
-                  width: 40,
+                    'images/hdfc1.png',
+                    height: 40,
+                    width: 40,
                     fit: BoxFit.fill,
                   ),
                   Text(
-                   'HDFC',
-                   style: TextStyle(fontSize: 13.0,),
+                    'HDFC',
+                    style: TextStyle(
+                      fontSize: 13.0,
+                    ),
                   ),
                 ],
               ),
-              SizedBox(width:25),
-               Column(
-                 children: <Widget>[
-                   Image.asset(
-              'images/ICICI-Bank.png',
-              height: 50,
-              width: 50,
-                    fit: BoxFit.cover,
-              ),
-              Text(
-                   'ICICI',
-                   style: TextStyle(fontSize: 13.0,),
-                  ),
-                 ],
-               ),
-              SizedBox(width:25),
-
-               Column(
-                 children: <Widget>[
-                   Image.asset(
-              'images/sbi1.png',
-              height: 40,
-              width: 40,
-                    fit: BoxFit.cover,
-              ),
-              Text(
-                   'SBI',
-                   style: TextStyle(fontSize: 13.0,),
-                  ),
-                 ],
-               ),
-              SizedBox(width:25),
-
-               Column(
-                 children: <Widget>[
-                   Image.asset(
-              'images/Axis.png',
-              height: 40,
-              width: 40,
-                    fit: BoxFit.cover,
-              ),
-              Text(
-                   'Axis',
-                   style: TextStyle(fontSize: 13.0,),
-                  ),
-                 ],
-               ),
-              SizedBox(width:25),
-
+              SizedBox(width: 25),
               Column(
                 children: <Widget>[
                   Image.asset(
-                  'images/Andhra.jpg',
-                  height: 40,
-                  width: 40,
+                    'images/ICICI-Bank.png',
+                    height: 50,
+                    width: 50,
+                    fit: BoxFit.cover,
+                  ),
+                  Text(
+                    'ICICI',
+                    style: TextStyle(
+                      fontSize: 13.0,
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(width: 25),
+              Column(
+                children: <Widget>[
+                  Image.asset(
+                    'images/sbi1.png',
+                    height: 40,
+                    width: 40,
+                    fit: BoxFit.cover,
+                  ),
+                  Text(
+                    'SBI',
+                    style: TextStyle(
+                      fontSize: 13.0,
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(width: 25),
+              Column(
+                children: <Widget>[
+                  Image.asset(
+                    'images/Axis.png',
+                    height: 40,
+                    width: 40,
+                    fit: BoxFit.cover,
+                  ),
+                  Text(
+                    'Axis',
+                    style: TextStyle(
+                      fontSize: 13.0,
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(width: 25),
+              Column(
+                children: <Widget>[
+                  Image.asset(
+                    'images/Andhra.jpg',
+                    height: 40,
+                    width: 40,
                     fit: BoxFit.cover,
                   ),
                   SizedBox(height: 3.0),
                   Text(
-                   'ANDHRA',
-                   style: TextStyle(fontSize: 13.0,),
+                    'ANDHRA',
+                    style: TextStyle(
+                      fontSize: 13.0,
+                    ),
                   ),
                 ],
               ),

@@ -24,14 +24,12 @@ class Gallery extends StatefulWidget {
 }
 
 class _GalleryState extends State<Gallery> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
         child: Text("Gallery"),
       ),
-
     );
   }
 }

@@ -289,113 +289,113 @@ class Mycart extends StatelessWidget {
           ),
         ),
         bottomNavigationBar: BottomAppBar(
-            child: Container(
-          height: 180,
-          color: Colors.white,
-          child: Column(
-            //mainAxisAlignment: MainAxisAlignment.start,
-            children: <Widget>[
-              Row(
-                children: <Widget>[
-                  SizedBox(width: 20.0),
-                  Container(
-                    decoration: BoxDecoration(
+          child: Container(
+            height: 180,
+            color: Colors.white,
+            child: Column(
+              //mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                Row(
+                  children: <Widget>[
+                    SizedBox(width: 20.0),
+                    Container(
+                      decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Icon(
-                        Icons.card_travel,
-                        size: 40,
-                        color: Colors.black,
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Icon(
+                          Icons.card_travel,
+                          size: 40,
+                          color: Colors.black,
+                        ),
                       ),
                     ),
-                  ),
-                  SizedBox(width: 10.0),
-                  Column(
-                    children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.only(top:20.0),
-                        child: Text(
-                          'Delivery to work',
+                    SizedBox(width: 10.0),
+                    Column(
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.only(top: 20.0),
+                          child: Text(
+                            'Delivery to work',
+                            style: TextStyle(
+                              fontSize: 17.0,
+                              color: Colors.black,
+                              fontWeight: FontWeight.normal,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          'Kothaguda',
                           style: TextStyle(
-                            fontSize: 17.0,
-                            color: Colors.black,
+                            fontSize: 15.0,
+                            color: Colors.grey,
                             fontWeight: FontWeight.normal,
                           ),
                         ),
-                      ),
-                      Text(
-                        'Kothaguda',
-                        style: TextStyle(
-                          fontSize: 15.0,
-                          color: Colors.grey,
-                          fontWeight: FontWeight.normal,
-                        ),
-                      ),
-                      Text(
-                        '31 MINS',
-                        style: TextStyle(
+                        Text(
+                          '31 MINS',
+                          style: TextStyle(
                             fontSize: 15.0,
                             color: Colors.black,
                           ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 30.0),
-                  Text(
-                    'ADD ADDRESS',
-                    style: TextStyle(
-                      fontSize: 16.0,
-                      color: Colors.green[800],
-                      fontWeight: FontWeight.bold,
+                        ),
+                      ],
                     ),
-                  ),
-                ],
-              ),
-              Row(
-               children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.only(top:30.0, left: 10.0),
-                        child: Column(
-                          children: <Widget>[
-                            Row(
-                              children: <Widget>[
-                                Icon(
-                          Icons.attach_money,
-                          size: 20.0,
-                          color: Colors.black,
-                        ),
-                                Text(
-                                  "43.00",
-                                  style: TextStyle(
-                                    fontSize: 16.0,
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.w600,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            SizedBox(height:5),
-                            Text(
-                              'VIEW DETAILED BILL',
-                              style: TextStyle(
-                                fontSize: 15.0,
-                                color: Colors.blue,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                          ],
-                        ),
+                    SizedBox(width: 30.0),
+                    Text(
+                      'ADD ADDRESS',
+                      style: TextStyle(
+                        fontSize: 16.0,
+                        color: Colors.green[800],
+                        fontWeight: FontWeight.bold,
                       ),
-                       SizedBox(width:40),
-                      Padding(
-                        padding: const EdgeInsets.only(top:30.0),
-                        child: Container(
-                          color: Colors.yellow[700],
-                          child: Padding(
-                            padding: const EdgeInsets.all(18.0),
-                            child:InkWell(
+                    ),
+                  ],
+                ),
+                Row(
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.only(top: 30.0, left: 10.0),
+                      child: Column(
+                        children: <Widget>[
+                          Row(
+                            children: <Widget>[
+                              Icon(
+                                Icons.attach_money,
+                                size: 20.0,
+                                color: Colors.black,
+                              ),
+                              Text(
+                                "43.00",
+                                style: TextStyle(
+                                  fontSize: 16.0,
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 5),
+                          Text(
+                            'VIEW DETAILED BILL',
+                            style: TextStyle(
+                              fontSize: 15.0,
+                              color: Colors.blue,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(width: 40),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 30.0),
+                      child: Container(
+                        color: Colors.yellow[700],
+                        child: Padding(
+                          padding: const EdgeInsets.all(18.0),
+                          child: InkWell(
                             child: Text(
                               "PROCEED TO PAY",
                               style: TextStyle(
@@ -405,19 +405,20 @@ class Mycart extends StatelessWidget {
                               ),
                             ),
                             onTap: () {
-                          Navigator.of(context).push(new MaterialPageRoute(
-                            builder: (BuildContext context) => new Proceedtopay(),
-                          ));
-                        },
-                            ),
+                              Navigator.of(context).push(new MaterialPageRoute(
+                                builder: (BuildContext context) =>
+                                    new Proceedtopay(),
+                              ));
+                            },
                           ),
                         ),
                       ),
-               ],
-              ), 
-            ],
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
-        ),
         ),
       ),
     );

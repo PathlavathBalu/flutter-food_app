@@ -2578,79 +2578,81 @@ class _ViewcartState extends State<Viewcart> {
       ),
       bottomNavigationBar: BottomAppBar(
           child: Container(
-           height: 50,
-           color: Colors.yellow[700],
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                InkWell(
-                child:Row(
-                  children: <Widget>[
-                    SizedBox(width: 20.0),
-                     Text('1',
-                      style: TextStyle(
-                        fontSize: 18.0,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                      ),
-                     ),
-                    SizedBox(width: 10.0),
-                    Text('Item',
-                      style: TextStyle(
-                        fontSize: 18.0,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                      ),
-                     ),
-                     SizedBox(width: 10.0),
-                     Text('|',
-                      style: TextStyle(
-                        fontSize: 18.0,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                      ),
-                     ),
-                    SizedBox(width: 10.0),
-                    Icon(
-                      Icons.attach_money,
-                      size: 24,
+        height: 50,
+        color: Colors.yellow[700],
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            InkWell(
+              child: Row(
+                children: <Widget>[
+                  SizedBox(width: 20.0),
+                  Text(
+                    '1',
+                    style: TextStyle(
+                      fontSize: 18.0,
                       color: Colors.white,
+                      fontWeight: FontWeight.bold,
                     ),
-                    Text(
-                      '23.0',
-                      style: TextStyle(
-                        fontSize: 18.0,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    SizedBox(width: 50.0),
-                    Text(
-                      'VIEW CART',
-                      style: TextStyle(
-                        fontSize: 18.0,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                     SizedBox(width: 10.0),
-                    Icon(
-                      Icons.card_travel,
-                      size: 24,
+                  ),
+                  SizedBox(width: 10.0),
+                  Text(
+                    'Item',
+                    style: TextStyle(
+                      fontSize: 18.0,
                       color: Colors.white,
+                      fontWeight: FontWeight.bold,
                     ),
-                  ],
-                ),
-                onTap: () {
-                          Navigator.of(context).push(new MaterialPageRoute(
-                            builder: (BuildContext context) => Mycart(),
-                          ));
-                        },
-                ),
-              ],
+                  ),
+                  SizedBox(width: 10.0),
+                  Text(
+                    '|',
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(width: 10.0),
+                  Icon(
+                    Icons.attach_money,
+                    size: 24,
+                    color: Colors.white,
+                  ),
+                  Text(
+                    '23.0',
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(width: 50.0),
+                  Text(
+                    'VIEW CART',
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(width: 10.0),
+                  Icon(
+                    Icons.card_travel,
+                    size: 24,
+                    color: Colors.white,
+                  ),
+                ],
+              ),
+              onTap: () {
+                Navigator.of(context).push(new MaterialPageRoute(
+                  builder: (BuildContext context) => Mycart(),
+                ));
+              },
             ),
-          )
-      ),
+          ],
+        ),
+      )),
     );
   }
 }

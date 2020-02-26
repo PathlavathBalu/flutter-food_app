@@ -65,8 +65,7 @@ class Legal extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
+              padding: const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border(
@@ -83,8 +82,7 @@ class Legal extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
+              padding: const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border(
@@ -101,8 +99,7 @@ class Legal extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
+              padding: const EdgeInsets.only(left: 8.0, bottom: 10.0, top: 8.0),
               child: Container(
                 decoration: BoxDecoration(
                   border: Border(

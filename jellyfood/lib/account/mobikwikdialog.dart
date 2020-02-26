@@ -113,7 +113,7 @@ class MobikwikdialogState extends State<Mobikwikdialog>
                                 color: Colors.green[700],
                                 fontWeight: FontWeight.bold,
                                 fontSize: 17.0),
-                           ),
+                          ),
                           onTap: () {
                             Navigator.of(context).push(new MaterialPageRoute(
                               builder: (BuildContext context) =>

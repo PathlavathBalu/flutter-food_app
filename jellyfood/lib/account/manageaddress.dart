@@ -101,18 +101,18 @@ class _SavedState extends State<Saved> {
             child: Row(
               children: <Widget>[
                 InkWell(
-                child:Text(
-                  'EDIT',
-                  style: TextStyle(
-                      fontSize: 18.0,
-                      color: Colors.green[800],
-                      fontWeight: FontWeight.bold),
-                ),
-              //   onTap: () {
-              //   Navigator.of(context).push(new MaterialPageRoute(
-              //     builder: (BuildContext context) => new Manageaddress1(),
-              //   ));
-              // },
+                  child: Text(
+                    'EDIT',
+                    style: TextStyle(
+                        fontSize: 18.0,
+                        color: Colors.green[800],
+                        fontWeight: FontWeight.bold),
+                  ),
+                  //   onTap: () {
+                  //   Navigator.of(context).push(new MaterialPageRoute(
+                  //     builder: (BuildContext context) => new Manageaddress1(),
+                  //   ));
+                  // },
                 ),
                 SizedBox(width: 40),
                 FlatButton(
@@ -125,9 +125,9 @@ class _SavedState extends State<Saved> {
                   ),
                   onPressed: () {
                     showDialog(
-        context: context,
-        builder: (_) => LogoutOverlay(),
-      );
+                      context: context,
+                      builder: (_) => LogoutOverlay(),
+                    );
                   },
                 ),
               ],

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import '../main_screen.dart';
+import 'cureentlocation.dart';
+//import 'cureentlocation.dart';
 
 class Setlocation extends StatelessWidget {
   @override
@@ -13,9 +15,9 @@ class Setlocation extends StatelessWidget {
           actions: <Widget>[
             Padding(
               padding: EdgeInsets.only(bottom: 15.0),
-              child:InkWell(
-              child: Icon(Icons.arrow_back, color: Colors.black, size: 20.0),
-              onTap: () {
+              child: InkWell(
+                child: Icon(Icons.arrow_back, color: Colors.black, size: 20.0),
+                onTap: () {
                   Navigator.pop(context);
                 },
               ),
@@ -56,26 +58,26 @@ class Setlocation extends StatelessWidget {
           child: ListView(children: <Widget>[
             Padding(
               padding: const EdgeInsets.only(top: 28.0, left: 22.0),
-              child:InkWell(
-              child: Row(                
-                children: <Widget>[
-                  Icon(Icons.location_searching,
-                      color: Colors.black54, size: 25.0),
-                  SizedBox(width: 10.0),
-                  Text(
-                    'Current Location',
-                    style: TextStyle(
-                      color: Colors.black87,
-                      fontSize: 20.0,
-                    ),
-                  )
-                ],
-              ),
-               onTap: () {
-                Navigator.of(context).push(new MaterialPageRoute(
-                  builder: (BuildContext context) => new MainScreen(),
-                ));
-              },
+              child: InkWell(
+                child: Row(
+                  children: <Widget>[
+                    Icon(Icons.location_searching,
+                        color: Colors.black54, size: 25.0),
+                    SizedBox(width: 10.0),
+                    Text(
+                      'Current Location',
+                      style: TextStyle(
+                        color: Colors.black87,
+                        fontSize: 20.0,
+                      ),
+                    )
+                  ],
+                ),
+                onTap: () {
+                  Navigator.of(context).push(new MaterialPageRoute(
+                    builder: (BuildContext context) => new CurrentLocation(),
+                  ));
+                },
               ),
             ),
             Padding(

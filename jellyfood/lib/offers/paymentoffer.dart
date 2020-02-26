@@ -93,7 +93,8 @@ class _PaymentoffersState extends State<Paymentoffers> {
             ),
           ),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
                   Container(
@@ -115,7 +116,8 @@ class _PaymentoffersState extends State<Paymentoffers> {
               )),
           SizedBox(height: 8.0),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
                   Container(
@@ -137,7 +139,8 @@ class _PaymentoffersState extends State<Paymentoffers> {
               )),
           SizedBox(height: 8.0),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
                   Container(
@@ -159,7 +162,8 @@ class _PaymentoffersState extends State<Paymentoffers> {
               )),
           SizedBox(height: 8.0),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
                   Container(
@@ -171,19 +175,20 @@ class _PaymentoffersState extends State<Paymentoffers> {
                   ),
                   SizedBox(width: 8.0),
                   Expanded(
-                  child:Text(
-                    'Offer valid once per user per month during the offer period',
-                    style: TextStyle(
-                      fontSize: 16.0,
-                      color: Colors.grey,
+                    child: Text(
+                      'Offer valid once per user per month during the offer period',
+                      style: TextStyle(
+                        fontSize: 16.0,
+                        color: Colors.grey,
+                      ),
                     ),
-                  ),
                   ),
                 ],
               )),
           SizedBox(height: 8.0),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
                   Container(
@@ -205,10 +210,11 @@ class _PaymentoffersState extends State<Paymentoffers> {
               )),
           SizedBox(height: 8.0),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
-                  Container(                    
+                  Container(
                     child: Icon(
                       Icons.brightness_1,
                       size: 10.0,
@@ -228,14 +234,13 @@ class _PaymentoffersState extends State<Paymentoffers> {
           SizedBox(height: 10.0),
           Container(
             decoration: BoxDecoration(
-                border: Border(
-                  bottom: BorderSide(color: Colors.grey[300]),
-                ),
+              border: Border(
+                bottom: BorderSide(color: Colors.grey[300]),
               ),
+            ),
           ),
-           SizedBox(height: 28.0),
-
-           Padding(
+          SizedBox(height: 28.0),
+          Padding(
             padding: const EdgeInsets.only(
                 top: 4.0, left: 14.0, right: 130, bottom: 5.0),
             child: Container(
@@ -243,7 +248,6 @@ class _PaymentoffersState extends State<Paymentoffers> {
                 color: Colors.yellow[100],
                 border: Border.all(color: Colors.grey),
               ),
-            
               child: Row(
                 children: <Widget>[
                   Padding(
@@ -305,7 +309,8 @@ class _PaymentoffersState extends State<Paymentoffers> {
             ),
           ),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
                   Container(
@@ -327,7 +332,8 @@ class _PaymentoffersState extends State<Paymentoffers> {
               )),
           SizedBox(height: 8.0),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
                   Container(
@@ -349,7 +355,8 @@ class _PaymentoffersState extends State<Paymentoffers> {
               )),
           SizedBox(height: 8.0),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
                   Container(
@@ -371,7 +378,8 @@ class _PaymentoffersState extends State<Paymentoffers> {
               )),
           SizedBox(height: 8.0),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
                   Container(
@@ -383,19 +391,20 @@ class _PaymentoffersState extends State<Paymentoffers> {
                   ),
                   SizedBox(width: 8.0),
                   Expanded(
-                  child:Text(
-                    'Offer valid only on HDFC bank PayZapp period card',
-                    style: TextStyle(
-                      fontSize: 16.0,
-                      color: Colors.grey,
+                    child: Text(
+                      'Offer valid only on HDFC bank PayZapp period card',
+                      style: TextStyle(
+                        fontSize: 16.0,
+                        color: Colors.grey,
+                      ),
                     ),
-                  ),
                   ),
                 ],
               )),
           SizedBox(height: 8.0),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
                   Container(
@@ -417,10 +426,11 @@ class _PaymentoffersState extends State<Paymentoffers> {
               )),
           SizedBox(height: 8.0),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
-                  Container(                    
+                  Container(
                     child: Icon(
                       Icons.brightness_1,
                       size: 10.0,
@@ -440,14 +450,13 @@ class _PaymentoffersState extends State<Paymentoffers> {
           SizedBox(height: 10.0),
           Container(
             decoration: BoxDecoration(
-                border: Border(
-                  bottom: BorderSide(color: Colors.grey[300]),
-                ),
+              border: Border(
+                bottom: BorderSide(color: Colors.grey[300]),
               ),
+            ),
           ),
-           SizedBox(height: 28.0),
-
-           Padding(
+          SizedBox(height: 28.0),
+          Padding(
             padding: const EdgeInsets.only(
                 top: 4.0, left: 14.0, right: 150, bottom: 5.0),
             child: Container(
@@ -517,7 +526,8 @@ class _PaymentoffersState extends State<Paymentoffers> {
             ),
           ),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
                   Container(
@@ -528,20 +538,21 @@ class _PaymentoffersState extends State<Paymentoffers> {
                     ),
                   ),
                   SizedBox(width: 8.0),
-                   Expanded(
-                   child:Text(
-                    'Offer Valid 1st ever transaction using FreeCharge',
-                    style: TextStyle(
-                      fontSize: 16.0,
-                      color: Colors.grey,
+                  Expanded(
+                    child: Text(
+                      'Offer Valid 1st ever transaction using FreeCharge',
+                      style: TextStyle(
+                        fontSize: 16.0,
+                        color: Colors.grey,
+                      ),
                     ),
                   ),
-                   ),
                 ],
               )),
           SizedBox(height: 8.0),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
                   Container(
@@ -563,7 +574,8 @@ class _PaymentoffersState extends State<Paymentoffers> {
               )),
           SizedBox(height: 8.0),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
                   Container(
@@ -585,7 +597,8 @@ class _PaymentoffersState extends State<Paymentoffers> {
               )),
           SizedBox(height: 8.0),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
                   Container(
@@ -597,19 +610,20 @@ class _PaymentoffersState extends State<Paymentoffers> {
                   ),
                   SizedBox(width: 8.0),
                   Expanded(
-                  child:Text(
-                    'Cashback Will br Credited into your Freecharge account within 72 hours',
-                    style: TextStyle(
-                      fontSize: 16.0,
-                      color: Colors.grey,
+                    child: Text(
+                      'Cashback Will br Credited into your Freecharge account within 72 hours',
+                      style: TextStyle(
+                        fontSize: 16.0,
+                        color: Colors.grey,
+                      ),
                     ),
-                  ),
                   ),
                 ],
               )),
           SizedBox(height: 8.0),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
                   Container(
@@ -631,10 +645,11 @@ class _PaymentoffersState extends State<Paymentoffers> {
               )),
           SizedBox(height: 8.0),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
-                  Container(                    
+                  Container(
                     child: Icon(
                       Icons.brightness_1,
                       size: 10.0,
@@ -654,14 +669,13 @@ class _PaymentoffersState extends State<Paymentoffers> {
           SizedBox(height: 10.0),
           Container(
             decoration: BoxDecoration(
-                border: Border(
-                  bottom: BorderSide(color: Colors.grey[300]),
-                ),
+              border: Border(
+                bottom: BorderSide(color: Colors.grey[300]),
               ),
+            ),
           ),
-           SizedBox(height: 28.0),
-
-           Padding(
+          SizedBox(height: 28.0),
+          Padding(
             padding: const EdgeInsets.only(
                 top: 4.0, left: 14.0, right: 150, bottom: 5.0),
             child: Container(
@@ -731,7 +745,8 @@ class _PaymentoffersState extends State<Paymentoffers> {
             ),
           ),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
                   Container(
@@ -753,7 +768,8 @@ class _PaymentoffersState extends State<Paymentoffers> {
               )),
           SizedBox(height: 8.0),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
                   Container(
@@ -775,7 +791,8 @@ class _PaymentoffersState extends State<Paymentoffers> {
               )),
           SizedBox(height: 8.0),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
                   Container(
@@ -797,7 +814,8 @@ class _PaymentoffersState extends State<Paymentoffers> {
               )),
           SizedBox(height: 8.0),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
                   Container(
@@ -809,19 +827,20 @@ class _PaymentoffersState extends State<Paymentoffers> {
                   ),
                   SizedBox(width: 8.0),
                   Expanded(
-                  child:Text(
-                    'Offer valid once per user per month during the offer period',
-                    style: TextStyle(
-                      fontSize: 16.0,
-                      color: Colors.grey,
+                    child: Text(
+                      'Offer valid once per user per month during the offer period',
+                      style: TextStyle(
+                        fontSize: 16.0,
+                        color: Colors.grey,
+                      ),
                     ),
-                  ),
                   ),
                 ],
               )),
           SizedBox(height: 8.0),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
                   Container(
@@ -843,10 +862,11 @@ class _PaymentoffersState extends State<Paymentoffers> {
               )),
           SizedBox(height: 8.0),
           Padding(
-              padding: const EdgeInsets.only( top: 6.0, left: 13.0, right: 0, bottom: 10.0),
+              padding: const EdgeInsets.only(
+                  top: 6.0, left: 13.0, right: 0, bottom: 10.0),
               child: Row(
                 children: <Widget>[
-                  Container(                    
+                  Container(
                     child: Icon(
                       Icons.brightness_1,
                       size: 10.0,
@@ -866,12 +886,12 @@ class _PaymentoffersState extends State<Paymentoffers> {
           SizedBox(height: 10.0),
           Container(
             decoration: BoxDecoration(
-                border: Border(
-                  bottom: BorderSide(color: Colors.grey[300]),
-                ),
+              border: Border(
+                bottom: BorderSide(color: Colors.grey[300]),
               ),
+            ),
           ),
-           SizedBox(height: 28.0),
+          SizedBox(height: 28.0),
         ],
       )),
     );
